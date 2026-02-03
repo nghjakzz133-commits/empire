@@ -903,3 +903,49 @@ body{
   color: #d4af37; /* gold */
   letter-spacing: .05em;
 }
+/* ===== ABOUT – VÌ SAO CHỌN EMPIRE ===== */
+.about-empire{
+  padding: 80px 16px;
+  text-align: center;
+}
+
+.about-empire h2{
+  font-size: 28px;
+  letter-spacing: .25em;
+  color: #d4af37;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+}
+
+.about-content{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 32px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-content .item{
+  padding: 26px 22px;
+  border: 1px solid rgba(212,175,55,.25);
+  border-radius: 18px;
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,.03),
+    rgba(0,0,0,.35)
+  );
+}
+
+.about-content h3{
+  font-size: 16px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: #f3d27a;
+  margin-bottom: 14px;
+}
+
+.about-content p{
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255,255,255,.85);
+}
