@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sự kiện · EMPIRE CLUB</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header header-center">
+
+  <a href="tel:0919918178" class="header-cta">📞 Đặt bàn</a>
+
+  <nav class="nav" id="navMenu">
+    <a href="about.html">Giới thiệu</a>
+    <a href="services.html">Gói bàn</a>
+    <a href="gallery.html">Không gian</a>
+    <a href="events.html">Sự kiện</a>
+    <a href="tel:0919918178" class="nav-cta">📞 Đặt bàn</a>
+  </nav>
+
+  <div class="hamburger hamburger-right" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>EVENTS</h1>
+    <p>Những đêm tiệc mang dấu ấn EMPIRE</p>
+  </div>
+</section>
+
+<!-- ================= UPCOMING ================= -->
+<section class="gallery">
+  <h2>Sự kiện sắp diễn ra</h2>
+  <p class="note">Thông tin sẽ được cập nhật trong thời gian sớm nhất</p>
+
+  <div
+    class="gallery-grid"
+    style="
+      display:flex;
+      gap:18px;
+      overflow-x:auto;
+      scroll-snap-type:x mandatory;
+      -webkit-overflow-scrolling:touch;
+      padding-bottom:12px;
+    "
+  >
+    <div class="img-box"
+         style="
+           min-width:85%;
+           scroll-snap-align:center;
+           background-image:
+             linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+             url('assets/img/placeholder/event-1.jpg');
+         ">
+    </div>
+
+    <div class="img-box"
+         style="
+           min-width:85%;
+           scroll-snap-align:center;
+           background-image:
+             linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+             url('assets/img/placeholder/event-2.jpg');
+         ">
+    </div>
+
+    <div class="img-box"
+         style="
+           min-width:85%;
+           scroll-snap-align:center;
+           background-image:
+             linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+             url('assets/img/placeholder/event-3.jpg');
+         ">
+    </div>
+  </div>
+
+  <p class="note" style="margin-top:18px;opacity:.6">
+    DJ Guest · Theme Night · Special Performance
+  </p>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section class="about">
+  <h2>Trải nghiệm sự kiện tại EMPIRE</h2>
+  <p>
+    Mỗi sự kiện tại EMPIRE CLUB được xây dựng như một đêm trình diễn nghệ thuật,
+    nơi âm nhạc, ánh sáng và không gian hòa quyện tạo nên trải nghiệm độc bản.
+    Từ DJ Guest, Theme Night đến Private Event,
+    mọi chi tiết đều được chăm chút để xứng tầm giới tinh hoa.
+  </p>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="services">
+  <h2>Đặt bàn cho đêm sự kiện</h2>
+  <p class="note">
+    Liên hệ sớm để giữ vị trí đẹp và được tư vấn khu vực phù hợp
+  </p>
+  <a href="tel:0919918178" class="hero-btn">📞 Liên hệ booking</a>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer-box">
+
+    <h3 class="footer-title">EMPIRE CLUB</h3>
+    <p class="footer-slogan">Where Night Becomes Empire</p>
+
+    <div class="footer-divider"></div>
+
+    <div class="footer-info">
+      <p>📍 8 Nguyễn Văn Tráng, P. Phạm Ngũ Lão, Quận 1</p>
+      <p>⏰ 20:00 – 04:00 · Every Night</p>
+      <p>📞 <a href="tel:0919918178">0919 918 178</a></p>
+    </div>
+
+    <div class="footer-copy">
+      © 2026 EMPIRE CLUB · All rights reserved
+    </div>
+
+  </div>
+</footer>
+
+<!-- FLOAT CONTACT -->
+<div class="lux-contact">
+  <a href="tel:0919918178" class="lux-icon phone">☎</a>
+  <a href="https://www.facebook.com/share/1Bhqbi2HWd/?mibextid=wwXIfr" target="_blank" class="lux-icon fb">f</a>
+  <a href="https://zalo.me/0919918178" target="_blank" class="lux-icon zalo">💬</a>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
