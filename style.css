@@ -653,18 +653,18 @@ body{
   color:#fff;
 }
 
-/* Giữ hero trong suốt để ăn nền video */
-.hero{
-  background:transparent;
-}
 .hero-video{
   display:block;
   width:100%;
-  height:auto;
 
-  margin-top:24px;     /* 👈 đẩy xuống dưới CTA */
-  max-height:65vh;     /* vừa màn hình mobile */
-  object-fit:contain;  /* giữ FULL video, không crop */
+  /* 👇 tạo khung cho video */
+  height:50vh;              /* mobile nhìn vừa */
+  max-height:420px;         /* PC không quá cao */
+
+  margin:24px auto 0;       /* nằm dưới CTA */
+
+  object-fit:cover;         /* lấp đầy khung, không méo */
+  border-radius:16px;
 
   background:#000;
 }
