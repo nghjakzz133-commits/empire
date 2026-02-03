@@ -411,3 +411,50 @@ h2{
   color:#fff;
   font-size:18px;
 }
+/* ============ HERO LOGO FORCE BIG ============ */
+
+.hero-brand{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  margin-bottom:24px;
+}
+
+/* LOGO – FORCE SIZE */
+.hero-brand img{
+  height:180px;          /* MOBILE & DESKTOP */
+  width:auto;
+  max-width:80vw;        /* không tràn màn hình */
+  display:block;
+
+  margin-bottom:18px;
+
+  filter:
+    drop-shadow(0 0 12px rgba(212,175,55,.5))
+    drop-shadow(0 0 30px rgba(212,175,55,.35));
+}
+
+/* TITLE */
+.hero-brand h1{
+  font-size:64px;
+  letter-spacing:6px;
+  color:#d4af37;
+  margin:0;
+  text-align:center;
+
+  text-shadow:0 0 18px rgba(212,175,55,.4);
+}
+
+/* ===== DESKTOP UP ===== */
+@media(min-width:768px){
+  .hero-brand img{
+    height:240px;
+    max-width:none;
+  }
+
+  .hero-brand h1{
+    font-size:96px;
+    letter-spacing:8px;
+  }
+}
