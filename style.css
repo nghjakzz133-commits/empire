@@ -5,11 +5,17 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family:Arial,Helvetica,sans-serif;
+  font-family: "Playfair Display", "Times New Roman", serif;
+}
+
+:root{
+  --gold:#d4af37;
+  --gold-soft:#f5e6a8;
+  --dark:#070709;
 }
 
 body{
-  background:#05000b;
+  background:var(--dark);
   color:#fff;
 }
 
@@ -19,7 +25,7 @@ body.menu-open{
 }
 
 /* =====================================================
-   HEADER (fixed – chỉ chứa hamburger)
+   HEADER (Luxury – quiet & premium)
    ===================================================== */
 .header{
   position:fixed;
@@ -27,38 +33,48 @@ body.menu-open{
   left:0;
   width:100%;
   height:64px;
-  background:rgba(0,0,0,.65);
+  background:rgba(7,7,9,.75);
   backdrop-filter:blur(6px);
   z-index:1000;
 }
 
+
 /* =====================================================
-   LOGO CENTER (điểm nhấn thương hiệu)
+   HEADER CTA (Luxury booking button)
    ===================================================== */
-.logo-center{
+.header-cta{
   position:fixed;
-  top:10px;
-  left:50%;
-  transform:translateX(-50%);
+  top:18px;
+  left:22px;
+
+  padding:8px 18px;
+  font-size:12px;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+
+  color:var(--gold);
+  text-decoration:none;
+
+  border:1px solid var(--gold);
+  border-radius:999px;
+
+  background:transparent;
+  transition:.3s ease;
   z-index:1200;
 }
 
-.logo-center img{
-  height:56px; /* chỉnh size logo */
-  width:auto;
-  display:block;
-  filter:
-    drop-shadow(0 0 14px #ff00ff)
-    drop-shadow(0 0 36px rgba(255,0,255,.85));
+.header-cta:hover{
+  background:var(--gold);
+  color:var(--dark);
 }
 
 /* =====================================================
-   HAMBURGER (góc phải – dưới logo)
+   HAMBURGER
    ===================================================== */
 .hamburger{
   position:fixed;
   right:20px;
-  top:20px;
+  top:22px;
   width:28px;
   cursor:pointer;
   z-index:1200;
@@ -66,13 +82,13 @@ body.menu-open{
 
 .hamburger span{
   display:block;
-  height:3px;
+  height:2px;
   background:#fff;
-  margin:5px 0;
+  margin:6px 0;
 }
 
 /* =====================================================
-   NAV MOBILE (menu trượt phải)
+   NAV MOBILE
    ===================================================== */
 .nav{
   position:fixed;
@@ -80,7 +96,7 @@ body.menu-open{
   right:-100%;
   width:70%;
   height:calc(100vh - 64px);
-  background:#0b0018;
+  background:#0b0b0e;
   display:flex;
   flex-direction:column;
   padding-top:30px;
@@ -91,88 +107,31 @@ body.menu-open{
 .nav a{
   padding:16px 24px;
   text-decoration:none;
-  color:#fff;
-  border-bottom:1px solid rgba(255,255,255,.1);
+  color:#ddd;
+  border-bottom:1px solid rgba(255,255,255,.08);
 }
 
-.nav-cta{
-  background:linear-gradient(45deg,#ff00ff,#9b00ff);
-  margin:20px;
-  border-radius:30px;
-  text-align:center;
-  font-weight:bold;
+.nav a:hover{
+  color:var(--gold);
 }
 
 .nav.active{
   right:0;
 }
 
-/* =====================================================
-   HERO (VIDEO BACKGROUND)
-   ===================================================== */
-.hero{
-  height:100vh;
-  position:relative;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  overflow:hidden;
-}
-
-.hero-video{
-  position:absolute;
-  inset:0;
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  z-index:-2;
-}
-
-.hero-overlay{
-  position:absolute;
-  inset:0;
-  background:rgba(0,0,0,.55);
-  z-index:-1;
-}
-
-.hero-content{
-  padding:0 20px;
-  z-index:2;
-}
-
-.hero h1{
-  font-size:44px;
-  letter-spacing:4px;
-  color:#ff00ff;
-  text-shadow:0 0 22px #ff00ff;
-}
-
-.hero p{
-  margin:16px 0 28px;
-  opacity:.9;
-}
-
-.hero-btn{
-  padding:14px 28px;
-  border-radius:30px;
-  background:linear-gradient(45deg,#9b00ff,#ff00ff);
-  text-decoration:none;
-  color:#fff;
-  font-weight:bold;
-}
 
 /* =====================================================
    SECTION GLOBAL
    ===================================================== */
 section{
-  padding:70px 20px;
+  padding:90px 20px;
   text-align:center;
 }
 
 h2{
   margin-bottom:20px;
-  color:#d26cff;
+  color:var(--gold);
+  letter-spacing:2px;
 }
 
 /* =====================================================
@@ -181,7 +140,7 @@ h2{
 .about p{
   max-width:800px;
   margin:auto;
-  line-height:1.6;
+  line-height:1.7;
   opacity:.9;
 }
 
@@ -191,14 +150,14 @@ h2{
 .service-box{
   display:grid;
   grid-template-columns:repeat(2,1fr);
-  gap:12px;
+  gap:16px;
 }
 
 .card{
-  padding:30px 10px;
+  padding:36px 18px;
   border-radius:14px;
-  border:1px solid #9b00ff;
-  background:rgba(255,255,255,.05);
+  border:1px solid rgba(212,175,55,.35);
+  background:rgba(255,255,255,.03);
 }
 
 .note{
@@ -213,23 +172,24 @@ h2{
 .gallery-grid{
   display:grid;
   grid-template-columns:repeat(2,1fr);
-  gap:10px;
+  gap:12px;
 }
 
 .img-box{
-  height:140px;
+  height:160px;
   border-radius:14px;
-  background:linear-gradient(135deg,#2a003f,#12001f);
+  background:#111;
 }
 
 /* =====================================================
    FOOTER
    ===================================================== */
 .footer{
-  background:#030006;
-  padding:30px 20px;
+  background:#040406;
+  padding:40px 20px;
   font-size:14px;
-  line-height:1.6;
+  line-height:1.7;
+  opacity:.8;
 }
 
 /* =====================================================
@@ -239,18 +199,17 @@ h2{
   position:fixed;
   right:20px;
   bottom:20px;
-  background:#0084ff;
+  background:#0068ff;
   color:#fff;
-  padding:12px 16px;
+  padding:12px 18px;
   border-radius:50px;
   text-decoration:none;
   font-weight:bold;
-  box-shadow:0 0 20px rgba(0,132,255,.6);
   z-index:1200;
 }
 
 /* =====================================================
-   DESKTOP (>=768px)
+   DESKTOP
    ===================================================== */
 @media(min-width:768px){
 
@@ -271,11 +230,11 @@ h2{
 
   .nav a{
     border:none;
-    margin-left:22px;
+    margin-left:26px;
   }
 
   .hero h1{
-    font-size:72px;
+    font-size:80px;
   }
 
   .service-box{
@@ -286,40 +245,148 @@ h2{
     grid-template-columns:repeat(4,1fr);
   }
 }
-.header-cta{
-  position:fixed;
-  top:22px;
-  left:22px;
 
-  padding:6px 14px;
-  font-size:12px;
-  letter-spacing:1px;
-  text-transform:uppercase;
-
-  color:#f5f5f5;
-  text-decoration:none;
-
-  border:1px solid rgba(255,255,255,.25);
-  border-radius:999px;
-
-  background:rgba(255,255,255,.03);
-  backdrop-filter:blur(6px);
-
-  box-shadow:
-    0 0 12px rgba(255,0,255,.25);
-
-  transition:.3s ease;
-  z-index:1200;
-}
-.header-cta:hover{
-  color:#fff;
-  border-color:#ff00ff;
-  box-shadow:
-    0 0 20px rgba(255,0,255,.6);
-}
 @media(max-width:480px){
   .header-cta{
     font-size:11px;
-    padding:5px 12px;
+    padding:6px 14px;
   }
+}
+/* ================= HERO BRAND FIX ================= */
+
+.hero-content{
+  position:relative;
+  z-index:2;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.hero-brand{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  margin-bottom:12px;
+}
+
+.hero-brand img{
+  height:90px;
+  width:auto;
+  margin-bottom:14px;
+}
+
+.hero-brand h1{
+  font-size:56px;
+  letter-spacing:6px;
+  color:#d4af37;
+  margin:0;
+  text-align:center;
+}
+
+/* Desktop */
+@media(min-width:768px){
+  .hero-brand img{
+    height:120px;
+  }
+  .hero-brand h1{
+    font-size:84px;
+  }
+}
+.hero-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+
+  padding:14px 36px;
+  margin-top:10px;
+
+  font-size:14px;
+  letter-spacing:1px;
+  text-transform:uppercase;
+
+  color:#d4af37;
+  text-decoration:none;
+
+  border:1px solid rgba(212,175,55,.6);
+  border-radius:999px;
+
+  background:rgba(212,175,55,.06);
+  backdrop-filter:blur(6px);
+
+  box-shadow:
+    0 0 20px rgba(212,175,55,.25);
+
+  transition:.35s ease;
+}
+
+.hero-btn:hover{
+  background:linear-gradient(45deg,#d4af37,#ffeb9a);
+  color:#000;
+  box-shadow:
+    0 0 30px rgba(212,175,55,.8);
+  transform:translateY(-2px);
+}
+/* ===============================
+   LUXURY FLOAT CONTACT
+================================ */
+.lux-contact{
+  position:fixed;
+  right:18px;
+  bottom:90px;
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+  z-index:1300;
+}
+
+/* icon chung */
+.lux-icon{
+  width:48px;
+  height:48px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-size:18px;
+  font-weight:600;
+  text-decoration:none;
+
+  background:radial-gradient(circle at top,#ffd978,#caa032);
+  color:#111;
+
+  box-shadow:
+    0 0 10px rgba(255,215,120,.6),
+    inset 0 0 6px rgba(255,255,255,.4);
+
+  transition:.25s ease;
+}
+
+/* hover luxury */
+.lux-icon:hover{
+  transform:translateY(-3px) scale(1.05);
+  box-shadow:
+    0 0 20px rgba(255,215,120,.9),
+    0 0 40px rgba(255,215,120,.6);
+}
+
+/* PHONE */
+.lux-icon.phone{
+  background:radial-gradient(circle at top,#ffe7a0,#d4a52c);
+}
+
+/* FACEBOOK */
+.lux-icon.fb{
+  background:radial-gradient(circle at top,#3b82f6,#1e40af);
+  color:#fff;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:20px;
+}
+
+/* ZALO */
+.lux-icon.zalo{
+  background:radial-gradient(circle at top,#4fc3ff,#0077cc);
+  color:#fff;
+  font-size:18px;
 }
