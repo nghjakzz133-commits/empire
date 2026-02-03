@@ -26,7 +26,6 @@ document.addEventListener("click", (e) => {
     document.body.classList.remove("menu-open");
   }
 });
-<script>
 /* ===== Gallery click → view full image (no HTML/CSS edit) ===== */
 document.addEventListener("click", function (e) {
   const box = e.target.closest(".img-box");
@@ -37,7 +36,6 @@ document.addEventListener("click", function (e) {
 
   const url = bg.slice(5, -2); // lấy link trong url("...")
 
-  // tạo overlay
   const overlay = document.createElement("div");
   overlay.style.position = "fixed";
   overlay.style.inset = "0";
@@ -59,7 +57,5 @@ document.addEventListener("click", function (e) {
   overlay.appendChild(img);
   document.body.appendChild(overlay);
 
-  // click đóng
   overlay.addEventListener("click", () => overlay.remove());
 });
-</script>
