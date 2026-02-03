@@ -461,3 +461,14 @@ h2{
     letter-spacing:9px;
   }
 }
+/* ===== FIX KHOẢNG HỞ TRÊN LOGO ===== */
+.hero-content{
+  justify-content:center;
+  margin-top:-60px; /* giảm khoảng hở trên */
+}
+
+@media(max-width:480px){
+  .hero-content{
+    margin-top:-90px; /* mobile kéo lên thêm */
+  }
+}
