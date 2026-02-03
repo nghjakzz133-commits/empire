@@ -11,7 +11,6 @@
 body{
   background:#05000b;
   color:#fff;
-  padding-top:80px; /* chừa chỗ cho header + logo */
 }
 
 /* Khoá scroll khi menu mobile mở */
@@ -20,44 +19,46 @@ body.menu-open{
 }
 
 /* =====================================================
-   HEADER (fixed, nền mờ)
+   HEADER (fixed – chỉ chứa hamburger)
    ===================================================== */
 .header{
   position:fixed;
   top:0;
+  left:0;
   width:100%;
-  height:80px;
-  background:rgba(0,0,0,.7);
+  height:64px;
+  background:rgba(0,0,0,.65);
+  backdrop-filter:blur(6px);
   z-index:1000;
 }
 
 /* =====================================================
-   LOGO CENTER (đè lên header – điểm nhấn chính)
+   LOGO CENTER (điểm nhấn thương hiệu)
    ===================================================== */
 .logo-center{
-  position:absolute;
+  position:fixed;
+  top:10px;
   left:50%;
-  top:50%;
-  transform:translate(-50%,-70%); /* đẩy logo lên cao hơn header */
+  transform:translateX(-50%);
   z-index:1200;
 }
 
 .logo-center img{
-  height:56px; /* chỉnh size logo tại đây */
+  height:56px; /* chỉnh size logo */
   width:auto;
   display:block;
   filter:
-    drop-shadow(0 0 12px #ff00ff)
-    drop-shadow(0 0 30px rgba(255,0,255,.85));
+    drop-shadow(0 0 14px #ff00ff)
+    drop-shadow(0 0 36px rgba(255,0,255,.85));
 }
 
 /* =====================================================
-   HAMBURGER (góc phải – nằm dưới logo)
+   HAMBURGER (góc phải – dưới logo)
    ===================================================== */
 .hamburger{
-  position:absolute;
+  position:fixed;
   right:20px;
-  bottom:14px;
+  top:20px;
   width:28px;
   cursor:pointer;
   z-index:1200;
@@ -71,14 +72,14 @@ body.menu-open{
 }
 
 /* =====================================================
-   NAV MOBILE (menu trượt từ phải)
+   NAV MOBILE (menu trượt phải)
    ===================================================== */
 .nav{
   position:fixed;
-  top:80px;
+  top:64px;
   right:-100%;
   width:70%;
-  height:calc(100vh - 80px);
+  height:calc(100vh - 64px);
   background:#0b0018;
   display:flex;
   flex-direction:column;
@@ -94,7 +95,6 @@ body.menu-open{
   border-bottom:1px solid rgba(255,255,255,.1);
 }
 
-/* CTA đặt bàn */
 .nav-cta{
   background:linear-gradient(45deg,#ff00ff,#9b00ff);
   margin:20px;
@@ -103,13 +103,12 @@ body.menu-open{
   font-weight:bold;
 }
 
-/* Trạng thái mở menu */
 .nav.active{
   right:0;
 }
 
 /* =====================================================
-   HERO (video background)
+   HERO (VIDEO BACKGROUND)
    ===================================================== */
 .hero{
   height:100vh;
@@ -139,13 +138,14 @@ body.menu-open{
 
 .hero-content{
   padding:0 20px;
+  z-index:2;
 }
 
 .hero h1{
   font-size:44px;
   letter-spacing:4px;
   color:#ff00ff;
-  text-shadow:0 0 20px #ff00ff;
+  text-shadow:0 0 22px #ff00ff;
 }
 
 .hero p{
@@ -186,7 +186,7 @@ h2{
 }
 
 /* =====================================================
-   SERVICES / TABLE
+   SERVICES
    ===================================================== */
 .service-box{
   display:grid;
@@ -233,7 +233,7 @@ h2{
 }
 
 /* =====================================================
-   ZALO FLOAT BUTTON
+   ZALO FLOAT
    ===================================================== */
 .zalo-float{
   position:fixed;
@@ -254,22 +254,14 @@ h2{
    ===================================================== */
 @media(min-width:768px){
 
-  body{
-    padding-top:0;
-  }
-
-  /* Ẩn hamburger */
   .hamburger{
     display:none;
   }
 
-  /* Menu desktop */
   .nav{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,50%);
-    right:auto;
+    position:fixed;
+    top:18px;
+    right:30px;
     height:auto;
     width:auto;
     flex-direction:row;
@@ -279,7 +271,7 @@ h2{
 
   .nav a{
     border:none;
-    margin:0 14px;
+    margin-left:22px;
   }
 
   .hero h1{
@@ -293,21 +285,4 @@ h2{
   .gallery-grid{
     grid-template-columns:repeat(4,1fr);
   }
-}
-.logo-center{
-  position:fixed;              /* quan trọng */
-  left:50%;
-  top:12px;                    /* chỉnh cao thấp */
-  transform:translateX(-50%);
-  z-index:1200;
-  pointer-events:auto;
-}
-
-.logo-center img{
-  height:44px;                 /* an toàn mobile */
-  width:auto;
-  display:block;
-  filter:
-    drop-shadow(0 0 10px #ff00ff)
-    drop-shadow(0 0 26px rgba(255,0,255,.8));
 }
