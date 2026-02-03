@@ -871,3 +871,35 @@ body{
     font-size: 14px;
   }
 }
+/* ===== COMBO MENU – CENTERED LUXURY ===== */
+
+/* căn giữa toàn section combo */
+.services{
+  text-align: center;
+}
+
+/* service-box chỉ có 1 card → căn giữa */
+.services .service-box{
+  display: flex;
+  justify-content: center;
+}
+
+/* card combo */
+.services .service-box .card{
+  max-width: 420px;
+  width: 100%;
+  padding: 28px 22px;
+}
+
+/* chữ trong card combo */
+.services .card strong{
+  display: block;
+  margin-bottom: 10px;
+  letter-spacing: .08em;
+}
+
+/* giá nổi hơn */
+.services .card .note strong{
+  color: #d4af37; /* gold */
+  letter-spacing: .05em;
+}
