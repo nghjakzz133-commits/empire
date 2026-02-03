@@ -166,20 +166,7 @@ h2{
   opacity:.7;
 }
 
-/* =====================================================
-   GALLERY
-   ===================================================== */
-.gallery-grid{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:12px;
-}
 
-.img-box{
-  height:160px;
-  border-radius:14px;
-  background:#111;
-}
 
 /* =====================================================
    FOOTER
