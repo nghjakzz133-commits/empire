@@ -398,50 +398,66 @@ h2{
   color:#fff;
   font-size:18px;
 }
-/* ============ HERO LOGO FORCE BIG ============ */
+/* ============ HERO BRAND — MAX IMPACT ============ */
 
+.hero{
+  min-height:100vh;
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding-top:40px;
+}
+
+/* BRAND BLOCK */
 .hero-brand{
   display:flex;
   flex-direction:column;
   align-items:center;
   justify-content:center;
-  margin-bottom:24px;
+  margin-bottom:32px;
 }
 
-/* LOGO – FORCE SIZE */
+/* LOGO — CHIẾM KHỐI */
 .hero-brand img{
-  height:180px;          /* MOBILE & DESKTOP */
+  height:42vh;              /* 🔥 chiếm gần nửa màn hình */
+  max-height:320px;         /* chặn quá to trên mobile nhỏ */
   width:auto;
-  max-width:80vw;        /* không tràn màn hình */
-  display:block;
 
-  margin-bottom:18px;
+  margin-bottom:20px;
 
   filter:
-    drop-shadow(0 0 12px rgba(212,175,55,.5))
-    drop-shadow(0 0 30px rgba(212,175,55,.35));
+    drop-shadow(0 0 16px rgba(212,175,55,.6))
+    drop-shadow(0 0 42px rgba(212,175,55,.45));
 }
 
 /* TITLE */
 .hero-brand h1{
-  font-size:64px;
-  letter-spacing:6px;
+  font-size:72px;
+  letter-spacing:7px;
   color:#d4af37;
   margin:0;
   text-align:center;
 
-  text-shadow:0 0 18px rgba(212,175,55,.4);
+  text-shadow:
+    0 0 22px rgba(212,175,55,.45);
 }
 
-/* ===== DESKTOP UP ===== */
+/* ===== DESKTOP ===== */
 @media(min-width:768px){
   .hero-brand img{
-    height:240px;
-    max-width:none;
+    height:48vh;
+    max-height:420px;
   }
 
   .hero-brand h1{
-    font-size:96px;
-    letter-spacing:8px;
+    font-size:108px;
+    letter-spacing:9px;
   }
 }
