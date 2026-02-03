@@ -657,3 +657,14 @@ body{
 .hero{
   background:transparent;
 }
+.hero-video{
+  display:block;
+  width:100%;
+  height:auto;
+
+  margin-top:24px;     /* 👈 đẩy xuống dưới CTA */
+  max-height:65vh;     /* vừa màn hình mobile */
+  object-fit:contain;  /* giữ FULL video, không crop */
+
+  background:#000;
+}
