@@ -272,20 +272,7 @@ h2{
   margin-bottom:22px;
 }
 
-/* ===== LOGO ===== */
-.hero-brand img{
-  height:160px;                 /* DESKTOP SIZE */
-  width:auto;
-  max-width:none;
-  display:block;
-  margin-bottom:18px;
 
-  filter:
-    drop-shadow(0 0 10px rgba(212,175,55,.45))
-    drop-shadow(0 0 26px rgba(212,175,55,.35));
-
-  transition:.4s ease;
-}
 
 /* ===== TITLE ===== */
 .hero-brand h1{
