@@ -642,3 +642,18 @@ h2{
   opacity:.45;
   margin-top:10px;
 }
+body{
+  background:
+    linear-gradient(
+      180deg,
+      #120004 0%,
+      #1a0008 35%,
+      #0a0004 100%
+    );
+  color:#fff;
+}
+
+/* Giữ hero trong suốt để ăn nền video */
+.hero{
+  background:transparent;
+}
