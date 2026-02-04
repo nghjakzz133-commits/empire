@@ -134,3 +134,19 @@ if (window.innerWidth < 768) {
 
 /* 4️⃣ Passive listener cho mobile scroll */
 document.addEventListener("touchstart", () => {}, { passive: true });
+/* ===== VIDEO CLICK → UNMUTE ===== */
+document.querySelectorAll('.video-list video').forEach(video => {
+  video.addEventListener('click', () => {
+
+    // mute hết video khác
+    document.querySelectorAll('.video-list video').forEach(v => {
+      v.muted = true;
+      v.volume = 0;
+    });
+
+    // bật tiếng video được click
+    video.muted = false;
+    video.volume = 1;
+    video.play().catch(() => {});
+  });
+});
