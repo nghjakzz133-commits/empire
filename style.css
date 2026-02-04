@@ -1016,3 +1016,57 @@ body {
     #2A0505 100%
   );
 }
+.video-scroll {
+  padding: 60px 0;
+}
+
+.video-list {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 0 6%;
+}
+
+.video-list video {
+  min-width: 280px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 18px;
+  scroll-snap-align: start;
+}
+
+.video-header {
+  padding: 0 6% 30px;
+  max-width: 900px;
+}
+
+.video-tag {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #c9a24d;
+}
+
+.video-header h2 {
+  font-size: 42px;
+  margin: 10px 0;
+}
+
+.video-header h2 small {
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  opacity: 0.75;
+}
+
+.video-desc {
+  font-size: 15px;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+.video-desc em {
+  display: block;
+  margin-top: 6px;
+  opacity: 0.7;
+}
