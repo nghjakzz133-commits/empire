@@ -1008,3 +1008,11 @@ body{
   margin-left: auto;
   align-self: center;
 }
+body {
+  background: linear-gradient(
+    135deg,
+    #6A1414 0%,
+    #4B0F0F 45%,
+    #2A0505 100%
+  );
+}
