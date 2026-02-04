@@ -82,3 +82,55 @@ document.addEventListener("DOMContentLoaded", () => {
     document.documentElement.lang = currentLang;
   });
 });
+/* =====================================================
+   PERFORMANCE FIX – MOBILE FIRST (NO HTML/CSS EDIT)
+   ===================================================== */
+
+/* 1️⃣ Lazy-load BACKGROUND images (.img-box) */
+document.addEventListener("DOMContentLoaded", () => {
+  const boxes = document.querySelectorAll(".img-box");
+
+  if (!("IntersectionObserver" in window)) return;
+
+  const io = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+
+      const el = entry.target;
+      const bg = el.style.backgroundImage;
+      if (!bg) return;
+
+      // trigger load khi vào viewport
+      el.style.backgroundImage = bg;
+      obs.unobserve(el);
+    });
+  }, { rootMargin: "200px" });
+
+  boxes.forEach(box => io.observe(box));
+});
+
+/* 2️⃣ Preload ảnh gallery khi user chuẩn bị click */
+document.querySelectorAll(".img-box").forEach(box => {
+  const bg = box.style.backgroundImage;
+  if (!bg) return;
+
+  const url = bg.slice(5, -2);
+
+  const preload = () => {
+    const img = new Image();
+    img.src = url;
+    box.removeEventListener("mouseenter", preload);
+    box.removeEventListener("touchstart", preload);
+  };
+
+  box.addEventListener("mouseenter", preload, { once: true });
+  box.addEventListener("touchstart", preload, { once: true });
+});
+
+/* 3️⃣ Đánh dấu mobile để giảm xử lý */
+if (window.innerWidth < 768) {
+  document.body.classList.add("is-mobile");
+}
+
+/* 4️⃣ Passive listener cho mobile scroll */
+document.addEventListener("touchstart", () => {}, { passive: true });
