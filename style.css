@@ -1152,3 +1152,17 @@ background: linear-gradient(
   font-style: italic;
   opacity: 0.7;
 }
+/* HEADER không tạo khoảng trống dưới */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+/* HERO không bị đẩy xuống dư */
+.hero {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
