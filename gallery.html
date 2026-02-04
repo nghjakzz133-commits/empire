@@ -10,26 +10,28 @@
 </head>
 <body>
 
-
 <header class="header header-center">
 
-   <!-- CTA HEADER -->
-  <a href="tel:0919918178" class="header-cta">
+  <!-- CTA HEADER -->
+  <a href="tel:0919918178" class="header-cta" data-vi="📞 Đặt bàn" data-en="📞 Reserve Table">
     📞 Đặt bàn
   </a>
 
- 
-
   <!-- NAV -->
-<nav class="nav" id="navMenu">
-  <a href="index.html">Trang Chủ</a>
-  <a href="about.html">Giới thiệu</a>
-  <a href="services.html">Gói bàn</a>
-  <a href="gallery.html">Không gian</a>
-  <a href="events.html">Sự kiện</a>
-  <a href="tel:0919918178" class="nav-cta">📞 Đặt bàn</a>
-</nav>
+  <nav class="nav" id="navMenu">
+    <a href="index.html" data-vi="Trang Chủ" data-en="Home">Trang Chủ</a>
+    <a href="about.html" data-vi="Giới thiệu" data-en="About">Giới thiệu</a>
+    <a href="services.html" data-vi="Gói bàn" data-en="Table Packages">Gói bàn</a>
+    <a href="gallery.html" data-vi="Không gian" data-en="Gallery">Không gian</a>
+    <a href="events.html" data-vi="Sự kiện" data-en="Events">Sự kiện</a>
+    <a href="tel:0919918178" class="nav-cta"
+       data-vi="📞 Đặt bàn" data-en="📞 Reserve Table">
+       📞 Đặt bàn
+    </a>
+  </nav>
 
+  <!-- LANGUAGE SWITCH -->
+  <button class="lang-switch" id="langToggle">EN</button>
 
   <!-- HAMBURGER -->
   <div class="hamburger hamburger-right" id="hamburger">
@@ -40,6 +42,7 @@
 
 </header>
 
+<!-- ================= HERO ================= -->
 <!-- ================= HERO ================= -->
 <section class="hero"
   style="
@@ -56,27 +59,41 @@
       <h1>EMPIRE CLUB</h1>
     </div>
 
-    <p>Mỗi góc nhìn – một nhịp cảm xúc</p>
-    <a href="tel:0919918178" class="hero-btn">📞 Đặt bàn ngay</a>
+    <p
+      data-vi="Mỗi góc nhìn – một nhịp cảm xúc"
+      data-en="Every Angle – A Different Emotion"
+    >
+      Mỗi góc nhìn – một nhịp cảm xúc
+    </p>
+
+    <a
+      href="tel:0919918178"
+      class="hero-btn"
+      data-vi="📞 Đặt bàn ngay"
+      data-en="📞 Reserve Now"
+    >
+      📞 Đặt bàn ngay
+    </a>
   </div>
 </section>
 
-<!-- ================= 1. EXTERIOR ================= -->
-<section class="gallery">
-  <h2>Ngoại thất</h2>
-  <p class="note">Dấu ấn đầu tiên của EMPIRE giữa lòng Quận 1</p>
 
-  <div
-    class="gallery-grid"
-    style="
-      display:flex;
-      gap:16px;
-      overflow-x:auto;
-      scroll-snap-type:x mandatory;
-      -webkit-overflow-scrolling:touch;
-      padding-bottom:12px;
-    "
+<section class="gallery">
+  <h2
+    data-vi="Ngoại thất"
+    data-en="Exterior"
   >
+    Ngoại thất
+  </h2>
+
+  <p class="note"
+     data-vi="Dấu ấn đầu tiên của EMPIRE giữa lòng Quận 1"
+     data-en="The first impression of EMPIRE in the heart of District 1"
+  >
+    Dấu ấn đầu tiên của EMPIRE giữa lòng Quận 1
+  </p>
+
+  <div class="gallery-grid" style="display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding-bottom:12px;">
     <div class="img-box" style="min-width:85%;scroll-snap-align:center;background-image:url('assets/img/ngoaithat/IMG_0047.jpeg')"></div>
 <div class="img-box" style="min-width:85%;scroll-snap-align:center;background-image:url('assets/img/ngoaithat/IMG_0056.jpeg')"></div>
 <div class="img-box" style="min-width:85%;scroll-snap-align:center;background-image:url('assets/img/ngoaithat/IMG_0080.jpeg')"></div>
@@ -86,22 +103,23 @@
   </div>
 </section>
 
-<!-- ================= 2. INTERIOR ================= -->
-<section class="gallery">
-  <h2>Không gian</h2>
-  <p class="note">Thiết kế sang trọng – ánh sáng tím neon đặc trưng</p>
 
-  <div
-    class="gallery-grid"
-    style="
-      display:flex;
-      gap:16px;
-      overflow-x:auto;
-      scroll-snap-type:x mandatory;
-      -webkit-overflow-scrolling:touch;
-      padding-bottom:12px;
-    "
+<section class="gallery">
+  <h2
+    data-vi="Không gian"
+    data-en="Interior"
   >
+    Không gian
+  </h2>
+
+  <p class="note"
+     data-vi="Thiết kế sang trọng – ánh sáng tím neon đặc trưng"
+     data-en="Luxury design with signature purple neon lighting"
+  >
+    Thiết kế sang trọng – ánh sáng tím neon đặc trưng
+  </p>
+
+  <div class="gallery-grid" style="display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding-bottom:12px;">
     <div class="img-box" style="min-width:85%;scroll-snap-align:center;background-image:url('assets/img/vibe/IMG_0084.jpeg')"></div>
 <div class="img-box" style="min-width:85%;scroll-snap-align:center;background-image:url('assets/img/vibe/IMG_0085.jpeg')"></div>
 <div class="img-box" style="min-width:85%;scroll-snap-align:center;background-image:url('assets/img/vibe/IMG_0086.jpeg')"></div>
@@ -113,22 +131,23 @@
   </div>
 </section>
 
-<!-- ================= 3. BOOKING / RECEPTION ================= -->
-<section class="gallery">
-  <h2>Booking & Tiếp khách</h2>
-  <p class="note">Đón tiếp chuyên nghiệp – sắp xếp vị trí theo đẳng cấp</p>
 
-  <div
-    class="gallery-grid"
-    style="
-      display:flex;
-      gap:16px;
-      overflow-x:auto;
-      scroll-snap-type:x mandatory;
-      -webkit-overflow-scrolling:touch;
-      padding-bottom:12px;
-    "
+<section class="gallery">
+  <h2
+    data-vi="Booking & Tiếp khách"
+    data-en="Booking & Reception"
   >
+    Booking & Tiếp khách
+  </h2>
+
+  <p class="note"
+     data-vi="Đón tiếp chuyên nghiệp – sắp xếp vị trí theo đẳng cấp"
+     data-en="Professional reception with premium seating arrangements"
+  >
+    Đón tiếp chuyên nghiệp – sắp xếp vị trí theo đẳng cấp
+  </p>
+
+  <div class="gallery-grid" style="display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding-bottom:12px;">
     <div class="img-box" style="min-width:85%;scroll-snap-align:center;background-image:url('assets/img/booking/IMG_0001.jpeg')"></div>
 <div class="img-box" style="min-width:85%;scroll-snap-align:center;background-image:url('assets/img/booking/IMG_0003.jpeg')"></div>
 <div class="img-box" style="min-width:85%;scroll-snap-align:center;background-image:url('assets/img/booking/IMG_0014.jpeg')"></div>
@@ -143,22 +162,22 @@
   </div>
 </section>
 
-<!-- ================= 4. DANCE FLOOR ================= -->
 <section class="gallery">
-  <h2>Dance Floor</h2>
-  <p class="note">Âm nhạc – ánh sáng – năng lượng bùng nổ mỗi đêm</p>
-
-  <div
-    class="gallery-grid"
-    style="
-      display:flex;
-      gap:16px;
-      overflow-x:auto;
-      scroll-snap-type:x mandatory;
-      -webkit-overflow-scrolling:touch;
-      padding-bottom:12px;
-    "
+  <h2
+    data-vi="Dance Floor"
+    data-en="Dance Floor"
   >
+    Dance Floor
+  </h2>
+
+  <p class="note"
+     data-vi="Âm nhạc – ánh sáng – năng lượng bùng nổ mỗi đêm"
+     data-en="Music · Lights · Explosive energy every night"
+  >
+    Âm nhạc – ánh sáng – năng lượng bùng nổ mỗi đêm
+  </p>
+
+  <div class="gallery-grid" style="display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding-bottom:12px;">
     <div class="img-box" style="min-width:85%;scroll-snap-align:center;background-image:url('assets/img/dance/IMG_0048.jpeg')"></div>
 <div class="img-box" style="min-width:85%;scroll-snap-align:center;background-image:url('assets/img/dance/IMG_0049.jpeg')"></div>
 <div class="img-box" style="min-width:85%;scroll-snap-align:center;background-image:url('assets/img/dance/IMG_0050.jpeg')"></div>
@@ -178,28 +197,75 @@
 
 <!-- ================= CTA ================= -->
 <section class="services">
-  <h2>Bắt đầu đêm tiệc của bạn tại EMPIRE</h2>
-  <p class="note">Liên hệ để được tư vấn khu vực & gói bàn phù hợp</p>
-  <a href="tel:0919918178" class="hero-btn">📞 Đặt bàn ngay</a>
+  <h2
+    data-vi="Bắt đầu đêm tiệc của bạn tại EMPIRE"
+    data-en="Start Your Night at EMPIRE"
+  >
+    Bắt đầu đêm tiệc của bạn tại EMPIRE
+  </h2>
+
+  <p class="note"
+     data-vi="Liên hệ để được tư vấn khu vực & gói bàn phù hợp"
+     data-en="Contact us for premium table recommendations"
+  >
+    Liên hệ để được tư vấn khu vực & gói bàn phù hợp
+  </p>
+
+  <a
+    href="tel:0919918178"
+    class="hero-btn"
+    data-vi="📞 Đặt bàn ngay"
+    data-en="📞 Reserve Now"
+  >
+    📞 Đặt bàn ngay
+  </a>
 </section>
+
 
 <!-- ================= FOOTER ================= -->
 <footer class="footer">
   <div class="footer-box">
 
     <h3 class="footer-title">EMPIRE CLUB</h3>
-    <p class="footer-slogan">Where Night Becomes Empire</p>
+
+    <p class="footer-slogan"
+       data-vi="Nơi đêm trở thành Đế Chế"
+       data-en="Where Night Becomes Empire"
+    >
+      Nơi đêm trở thành Đế Chế
+    </p>
 
     <div class="footer-divider"></div>
 
     <div class="footer-info">
-      <p>📍 8 Nguyễn Văn Tráng, P. Phạm Ngũ Lão, Quận 1</p>
-      <p>⏰ 20:00 – 04:00 · Every Night</p>
-      <p>📞 <a href="tel:0919918178">0919 918 178</a></p>
+      <p
+        data-vi="📍 8 Nguyễn Văn Tráng, P. Phạm Ngũ Lão, Quận 1"
+        data-en="📍 8 Nguyen Van Trang Street, Pham Ngu Lao Ward, District 1"
+      >
+        📍 8 Nguyễn Văn Tráng, P. Phạm Ngũ Lão, Quận 1
+      </p>
+
+      <p
+        data-vi="⏰ 20:00 – 04:00 · Mỗi đêm"
+        data-en="⏰ 20:00 – 04:00 · Every Night"
+      >
+        ⏰ 20:00 – 04:00 · Mỗi đêm
+      </p>
+
+      <p
+        data-vi="📞 Hotline / Zalo:"
+        data-en="📞 Hotline / Zalo:"
+      >
+        📞 Hotline / Zalo:
+        <a href="tel:0919918178">0919 918 178</a>
+      </p>
     </div>
 
-    <div class="footer-copy">
-      © 2026 EMPIRE CLUB · All rights reserved
+    <div class="footer-copy"
+         data-vi="© 2026 EMPIRE CLUB · Bảo lưu mọi quyền"
+         data-en="© 2026 EMPIRE CLUB · All rights reserved"
+    >
+      © 2026 EMPIRE CLUB · Bảo lưu mọi quyền
     </div>
 
   </div>
@@ -207,10 +273,17 @@
 
 <!-- FLOAT CONTACT -->
 <div class="lux-contact">
-  <a href="tel:0919918178" class="lux-icon phone">☎</a>
-  <a href="https://www.facebook.com/share/1Bhqbi2HWd/?mibextid=wwXIfr" target="_blank" class="lux-icon fb">f</a>
-  <a href="https://zalo.me/0919918178" target="_blank" class="lux-icon zalo">💬</a>
+  <a href="tel:0919918178" class="lux-icon phone" aria-label="Hotline">☎</a>
+  <a href="https://www.facebook.com/share/1Bhqbi2HWd/?mibextid=wwXIfr"
+     target="_blank"
+     class="lux-icon fb"
+     aria-label="Facebook">f</a>
+  <a href="https://zalo.me/0919918178"
+     target="_blank"
+     class="lux-icon zalo"
+     aria-label="Zalo">💬</a>
 </div>
+
 
 <script src="main.js"></script>
 </body>
