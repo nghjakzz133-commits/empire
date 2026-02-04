@@ -1152,7 +1152,7 @@ background: linear-gradient(
   font-style: italic;
   opacity: 0.7;
 }
-/* HEADER không tạo khoảng trống dưới */
+/* Header vẫn fixed */
 .header {
   position: fixed;
   top: 0;
@@ -1161,8 +1161,13 @@ background: linear-gradient(
   z-index: 999;
 }
 
-/* HERO không bị đẩy xuống dư */
+/* Hero không bị đẩy dư */
 .hero {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* TẠO KHOẢNG CÁCH CHO LOGO + TEXT */
+.hero-content {
+  padding-top: 90px; /* chỉnh 80–110px tuỳ chiều cao header */
 }
