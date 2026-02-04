@@ -1171,3 +1171,6 @@ background: linear-gradient(
 .hero-content {
   padding-top: 90px; /* chỉnh 80–110px tuỳ chiều cao header */
 }
+.hero-brand h1 {
+  transform: translateX(14px);
+}
