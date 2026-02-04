@@ -59,3 +59,26 @@ document.addEventListener("click", function (e) {
 
   overlay.addEventListener("click", () => overlay.remove());
 });
+/* ===============================
+   LANGUAGE TOGGLE VI / EN
+   =============================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+  let currentLang = "vi";
+
+  const toggleBtn = document.getElementById("langToggle");
+  if (!toggleBtn) return;
+
+  const translatableElements = document.querySelectorAll("[data-vi]");
+
+  toggleBtn.addEventListener("click", () => {
+    currentLang = currentLang === "vi" ? "en" : "vi";
+
+    translatableElements.forEach(el => {
+      el.textContent = el.getAttribute(`data-${currentLang}`);
+    });
+
+    toggleBtn.textContent = currentLang === "vi" ? "EN" : "VI";
+    document.documentElement.lang = currentLang;
+  });
+});
