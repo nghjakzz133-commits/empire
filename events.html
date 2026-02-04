@@ -3,33 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sự kiện · EMPIRE CLUB</title>
+  <title data-vi="Sự kiện · EMPIRE CLUB" data-en="Events · EMPIRE CLUB">
+    Sự kiện · EMPIRE CLUB
+  </title>
 
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-<!-- ================= HEADER ================= -->
+<!-- ================= HEADER (GIỐNG HOME) ================= -->
 <header class="header header-center">
 
-  <a href="tel:0919918178" class="header-cta">📞 Đặt bàn</a>
+  <!-- CTA HEADER -->
+  <a href="tel:0919918178" class="header-cta" data-vi="📞 Đặt bàn" data-en="📞 Reserve Table">
+    📞 Đặt bàn
+  </a>
 
+  <!-- NAV -->
   <nav class="nav" id="navMenu">
-  <a href="index.html">Trang Chủ</a>
-  <a href="about.html">Giới thiệu</a>
-  <a href="services.html">Gói bàn</a>
-  <a href="gallery.html">Không gian</a>
-  <a href="events.html">Sự kiện</a>
-  <a href="tel:0919918178" class="nav-cta">📞 Đặt bàn</a>
-</nav>
+    <a href="index.html" data-vi="Trang Chủ" data-en="Home">Trang Chủ</a>
+    <a href="about.html" data-vi="Giới thiệu" data-en="About">Giới thiệu</a>
+    <a href="services.html" data-vi="Gói bàn" data-en="Table Packages">Gói bàn</a>
+    <a href="gallery.html" data-vi="Không gian" data-en="Gallery">Không gian</a>
+    <a href="events.html" data-vi="Sự kiện" data-en="Events">Sự kiện</a>
+    <a href="tel:0919918178" class="nav-cta"
+       data-vi="📞 Đặt bàn" data-en="📞 Reserve Table">
+       📞 Đặt bàn
+    </a>
+  </nav>
 
+  <!-- LANGUAGE SWITCH -->
+  <button class="lang-switch" id="langToggle">EN</button>
 
+  <!-- HAMBURGER -->
   <div class="hamburger hamburger-right" id="hamburger">
-    <span></span><span></span><span></span>
+    <span></span>
+    <span></span>
+    <span></span>
   </div>
 
 </header>
+
 
 <!-- ================= HERO ================= -->
 <section class="hero"
@@ -47,15 +62,34 @@
       <h1>EMPIRE CLUB</h1>
     </div>
 
-    <p>Upcoming Experiences · Stay Tuned</p>
-    <a href="tel:0919918178" class="hero-btn">📞 Đặt bàn ngay</a>
+    <p
+      data-vi="Trải nghiệm sắp tới · Đón chờ"
+      data-en="Upcoming Experiences · Stay Tuned">
+      Trải nghiệm sắp tới · Đón chờ
+    </p>
+
+    <a href="tel:0919918178"
+       class="hero-btn"
+       data-vi="📞 Đặt bàn ngay"
+       data-en="📞 Reserve Now">
+      📞 Đặt bàn ngay
+    </a>
   </div>
 </section>
 
 <!-- ================= UPCOMING ================= -->
 <section class="gallery">
-  <h2>Sự kiện sắp diễn ra</h2>
-  <p class="note">Thông tin sẽ được cập nhật trong thời gian sớm nhất</p>
+  <h2
+    data-vi="Sự kiện sắp diễn ra"
+    data-en="Upcoming Events">
+    Sự kiện sắp diễn ra
+  </h2>
+
+  <p class="note"
+     data-vi="Thông tin sẽ được cập nhật trong thời gian sớm nhất"
+     data-en="Details will be updated soon">
+    Thông tin sẽ được cập nhật trong thời gian sớm nhất
+  </p>
 
   <div
     class="gallery-grid"
@@ -99,15 +133,32 @@
     </div>
   </div>
 
-  <p class="note" style="margin-top:18px;opacity:.6">
+  <p class="note"
+     style="margin-top:18px;opacity:.6"
+     data-vi="DJ Guest · Theme Night · Special Performance"
+     data-en="Guest DJs · Theme Nights · Special Performances">
     DJ Guest · Theme Night · Special Performance
   </p>
 </section>
 
 <!-- ================= EXPERIENCE ================= -->
 <section class="about">
-  <h2>Trải nghiệm sự kiện tại EMPIRE</h2>
-  <p>
+  <h2
+    data-vi="Trải nghiệm sự kiện tại EMPIRE"
+    data-en="Event Experiences at EMPIRE">
+    Trải nghiệm sự kiện tại EMPIRE
+  </h2>
+
+  <p
+    data-vi="Mỗi sự kiện tại EMPIRE CLUB được xây dựng như một đêm trình diễn nghệ thuật,
+    nơi âm nhạc, ánh sáng và không gian hòa quyện tạo nên trải nghiệm độc bản.
+    Từ DJ Guest, Theme Night đến Private Event,
+    mọi chi tiết đều được chăm chút để xứng tầm giới tinh hoa."
+    data-en="Each event at EMPIRE CLUB is crafted as an artistic night,
+    where music, lighting, and space blend into a unique experience.
+    From guest DJs and theme nights to private events,
+    every detail is designed to meet elite standards."
+  >
     Mỗi sự kiện tại EMPIRE CLUB được xây dựng như một đêm trình diễn nghệ thuật,
     nơi âm nhạc, ánh sáng và không gian hòa quyện tạo nên trải nghiệm độc bản.
     Từ DJ Guest, Theme Night đến Private Event,
@@ -117,11 +168,24 @@
 
 <!-- ================= CTA ================= -->
 <section class="services">
-  <h2>Đặt bàn cho đêm sự kiện</h2>
-  <p class="note">
+  <h2
+    data-vi="Đặt bàn cho đêm sự kiện"
+    data-en="Reserve for Event Nights">
+    Đặt bàn cho đêm sự kiện
+  </h2>
+
+  <p class="note"
+     data-vi="Liên hệ sớm để giữ vị trí đẹp và được tư vấn khu vực phù hợp"
+     data-en="Contact us early to secure the best seats and get personalized consultation">
     Liên hệ sớm để giữ vị trí đẹp và được tư vấn khu vực phù hợp
   </p>
-  <a href="tel:0919918178" class="hero-btn">📞 Liên hệ booking</a>
+
+  <a href="tel:0919918178"
+     class="hero-btn"
+     data-vi="📞 Liên hệ booking"
+     data-en="📞 Contact Booking">
+    📞 Liên hệ booking
+  </a>
 </section>
 
 <!-- ================= FOOTER ================= -->
@@ -129,17 +193,34 @@
   <div class="footer-box">
 
     <h3 class="footer-title">EMPIRE CLUB</h3>
-    <p class="footer-slogan">Where Night Becomes Empire</p>
+
+    <p class="footer-slogan"
+       data-vi="Nơi đêm trở thành Đế Chế"
+       data-en="Where Night Becomes Empire">
+      Nơi đêm trở thành Đế Chế
+    </p>
 
     <div class="footer-divider"></div>
 
     <div class="footer-info">
-      <p>📍 8 Nguyễn Văn Tráng, P. Phạm Ngũ Lão, Quận 1</p>
-      <p>⏰ 20:00 – 04:00 · Every Night</p>
+      <p
+        data-vi="📍 8 Nguyễn Văn Tráng, P. Phạm Ngũ Lão, Quận 1"
+        data-en="📍 8 Nguyen Van Trang St, District 1, Ho Chi Minh City">
+        📍 8 Nguyễn Văn Tráng, P. Phạm Ngũ Lão, Quận 1
+      </p>
+
+      <p
+        data-vi="⏰ 20:00 – 04:00 · Mỗi đêm"
+        data-en="⏰ 20:00 – 04:00 · Every Night">
+        ⏰ 20:00 – 04:00 · Mỗi đêm
+      </p>
+
       <p>📞 <a href="tel:0919918178">0919 918 178</a></p>
     </div>
 
-    <div class="footer-copy">
+    <div class="footer-copy"
+         data-vi="© 2026 EMPIRE CLUB · Bản quyền được bảo lưu"
+         data-en="© 2026 EMPIRE CLUB · All rights reserved">
       © 2026 EMPIRE CLUB · All rights reserved
     </div>
 
