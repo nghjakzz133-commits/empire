@@ -1,18 +1,76 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title data-vi="Sự kiện · EMPIRE CLUB" data-en="Events · EMPIRE CLUB">
-    Sự kiện · EMPIRE CLUB
-  </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Empire Events</title>
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+
+<style>
+/* EVENT PAGE EXTRA */
+.event-card{
+  max-width:900px;
+  margin:0 auto;
+  border:1px solid rgba(212,175,55,.25);
+  border-radius:20px;
+  overflow:hidden;
+  background:rgba(0,0,0,.35);
+  box-shadow:0 0 30px rgba(0,0,0,.8);
+}
+
+.event-img{
+  width:100%;
+  height:420px;
+  object-fit:cover;
+  display:block;
+}
+
+.event-body{
+  padding:28px 22px;
+  text-align:left;
+}
+
+.event-date{
+  color:var(--gold);
+  letter-spacing:2px;
+  font-size:13px;
+  margin-bottom:10px;
+}
+
+.event-title{
+  font-size:26px;
+  letter-spacing:1px;
+  margin-bottom:12px;
+}
+
+.event-meta{
+  font-size:14px;
+  line-height:1.8;
+  opacity:.9;
+}
+
+.event-cta{
+  margin-top:18px;
+  display:inline-block;
+  padding:10px 20px;
+  border:1px solid var(--gold);
+  border-radius:999px;
+  color:var(--gold);
+  text-decoration:none;
+  font-size:13px;
+}
+
+.event-cta:hover{
+  background:var(--gold);
+  color:#000;
+}
+</style>
+
 </head>
+
 <body>
 
-<!-- ================= HEADER (GIỐNG HOME) ================= -->
 <header class="header header-center">
 
   <!-- CTA HEADER -->
@@ -44,8 +102,6 @@
   </div>
 
 </header>
-
-
 <!-- ================= HERO ================= -->
 <section class="hero"
   style="
@@ -76,71 +132,187 @@
     </a>
   </div>
 </section>
+<!-- ================= EVENTS ================= -->
 
-<!-- ================= UPCOMING ================= -->
-<section class="gallery">
-  <h2
-    data-vi="Sự kiện sắp diễn ra"
-    data-en="Upcoming Events">
-    Sự kiện sắp diễn ra
-  </h2>
-
-  <p class="note"
-     data-vi="Thông tin sẽ được cập nhật trong thời gian sớm nhất"
-     data-en="Details will be updated soon">
-    Thông tin sẽ được cập nhật trong thời gian sớm nhất
-  </p>
-
-  <div
-    class="gallery-grid"
-    style="
-      display:flex;
-      gap:18px;
-      overflow-x:auto;
-      scroll-snap-type:x mandatory;
-      -webkit-overflow-scrolling:touch;
-      padding-bottom:12px;
-    "
-  >
-    <div class="img-box"
-         style="
-           min-width:85%;
-           scroll-snap-align:center;
-           background-image:
-             linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-             url('assets/img/placeholder/event-1.jpg');
-         ">
-    </div>
-
-    <div class="img-box"
-         style="
-           min-width:85%;
-           scroll-snap-align:center;
-           background-image:
-             linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-             url('assets/img/placeholder/event-2.jpg');
-         ">
-    </div>
-
-    <div class="img-box"
-         style="
-           min-width:85%;
-           scroll-snap-align:center;
-           background-image:
-             linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-             url('assets/img/placeholder/event-3.jpg');
-         ">
+<!-- 1 -->
+<section>
+  <h2>EVENT</h2>
+  <div class="event-card">
+    <img src="assets/img/event/IMG_0299.jpeg" class="event-img">
+    <div class="event-body">
+      <div class="event-date">16.01.2026 — Friday</div>
+      <div class="event-title">THE SHOW — Special Show </div>
+      <div class="event-meta">
+        Special Guest Singer<br>
+        Địa điểm: 08 Nguyễn Văn Tráng, Q1 HCM<br>
+        Hotline: 091 9918178
+      </div>
+      <a href="#" class="event-cta">Book Now</a>
     </div>
   </div>
-
-  <p class="note"
-     style="margin-top:18px;opacity:.6"
-     data-vi="DJ Guest · Theme Night · Special Performance"
-     data-en="Guest DJs · Theme Nights · Special Performances">
-    DJ Guest · Theme Night · Special Performance
-  </p>
 </section>
 
+<!-- 2 -->
+<section>
+  <h2>EVENT</h2>
+  <div class="event-card">
+    <img src="assets/img/event/IMG_0296.jpeg" class="event-img">
+    <div class="event-body">
+      <div class="event-date">29.11.2025 — Saturday</div>
+      <div class="event-title">MINI SHOW — SNOWHILL</div>
+      <div class="event-meta">
+        Guest MC & DJ Show<br>
+        Địa điểm: Empire Music<br>
+        Hotline: 091 9918178
+      </div>
+      <a href="#" class="event-cta">Book Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- 3 -->
+<section>
+  <h2>EVENT</h2>
+  <div class="event-card">
+    <img src="assets/img/event/IMG_0294.jpeg" class="event-img">
+    <div class="event-body">
+      <div class="event-date">31.10.2025 — Friday</div>
+      <div class="event-title">HALLOW'S ZOMBIE</div>
+      <div class="event-meta">
+        Halloween Theme Night<br>
+        Costume — Horror — Live Show<br>
+        Hotline: 091 9918178
+      </div>
+      <a href="#" class="event-cta">Book Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- 4 -->
+<section>
+  <h2>EVENT</h2>
+  <div class="event-card">
+    <img src="assets/img/event/IMG_0290.jpeg" class="event-img">
+    <div class="event-body">
+      <div class="event-date">25.06.2025 — Wednesday</div>
+      <div class="event-title">Special Guest DJ — TLO</div>
+      <div class="event-meta">
+        EDM Night — Guest DJ<br>
+        Empire Music Club<br>
+        Hotline: 091 9918178
+      </div>
+      <a href="#" class="event-cta">Book Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- 5 -->
+<section>
+  <h2>EVENT</h2>
+  <div class="event-card">
+    <img src="assets/img/event/IMG_0295.jpeg" class="event-img">
+    <div class="event-body">
+      <div class="event-date">15.11.2025 — Saturday</div>
+      <div class="event-title">THE FUSION NIGHT</div>
+      <div class="event-meta">
+        Multi DJ Lineup<br>
+        Show kéo dài xuyên đêm<br>
+        Hotline: 091 9918178
+      </div>
+      <a href="#" class="event-cta">Book Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- 6 -->
+<section>
+  <h2>EVENT</h2>
+  <div class="event-card">
+    <img src="assets/img/event/IMG_0288.jpeg" class="event-img">
+    <div class="event-body">
+      <div class="event-date">01.05.2025 — Thursday</div>
+      <div class="event-title">FUSION NIGHT</div>
+      <div class="event-meta">
+        DJ Team Empire<br>
+        Guest MC Sixbi<br>
+        Hotline: 091 9918178
+      </div>
+      <a href="#" class="event-cta">Book Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- 7 -->
+<section>
+  <h2>EVENT</h2>
+  <div class="event-card">
+    <img src="assets/img/event/IMG_0286.jpeg" class="event-img">
+    <div class="event-body">
+      <div class="event-date">26.04.2025 — Saturday</div>
+      <div class="event-title">HAPPY 2ND ANNIVERSARY</div>
+      <div class="event-meta">
+        Quay số trúng thưởng<br>
+        Giải vàng SJC<br>
+        Hotline: 091 9918178
+      </div>
+      <a href="#" class="event-cta">Book Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- 8 -->
+<section>
+  <h2>EVENT</h2>
+  <div class="event-card">
+    <img src="assets/img/event/IMG_0284.jpeg" class="event-img">
+    <div class="event-body">
+      <div class="event-date">05.04.2025 — Saturday</div>
+      <div class="event-title">Guest Singer — Mochiii</div>
+      <div class="event-meta">
+        Live Vocal Show<br>
+        Special Performance<br>
+        Hotline: 091 9918178
+      </div>
+      <a href="#" class="event-cta">Book Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- 9 -->
+<section>
+  <h2>EVENT</h2>
+  <div class="event-card">
+    <img src="assets/img/event/IMG_0283.jpeg" class="event-img">
+    <div class="event-body">
+      <div class="event-date">08.03.2025 — Women’s Day</div>
+      <div class="event-title">HAPPY WOMEN’S DAY</div>
+      <div class="event-meta">
+        Quà tặng & ưu đãi cho nữ<br>
+        Chocolate Theme<br>
+        Hotline: 091 9918178
+      </div>
+      <a href="#" class="event-cta">Book Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- 10 -->
+<section>
+  <h2>EVENT</h2>
+  <div class="event-card">
+    <img src="assets/img/event/IMG_0282.jpeg" class="event-img">
+    <div class="event-body">
+      <div class="event-date">18.01.2025 — Saturday</div>
+      <div class="event-title">Quang Hùng MasterD Show</div>
+      <div class="event-meta">
+        Guest Singer + Dancer Show<br>
+        Live Stage Night<br>
+        Hotline: 091 9918178
+      </div>
+      <a href="#" class="event-cta">Book Now</a>
+    </div>
+  </div>
+</section>
 <!-- ================= EXPERIENCE ================= -->
 <section class="about">
   <h2
@@ -165,7 +337,6 @@
     mọi chi tiết đều được chăm chút để xứng tầm giới tinh hoa.
   </p>
 </section>
-
 <!-- ================= CTA ================= -->
 <section class="services">
   <h2
