@@ -453,8 +453,13 @@
     btn.textContent = lang === 'vi' ? 'EN' : 'VI';
 
     document.querySelectorAll('[data-vi]').forEach(el => {
-      const html = el.getAttribute('data-' + lang);
-      if (html) el.innerHTML = html; // 🔥 QUAN TRỌNG
+      let html = el.getAttribute('data-' + lang);
+      if (!html) return;
+
+      // 🔥 FIX CHÍ MẠNG: convert <br> text → HTML
+      html = html.replace(/&lt;br\s*\/?&gt;|<br\s*\/?>/gi, '<br>');
+
+      el.innerHTML = html;
     });
   }
 
