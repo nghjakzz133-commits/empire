@@ -1,197 +1,1670 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <!-- Basic -->
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>EMPIRE CLUB</title>
-  <meta name="description" content="Empire Club – Không gian giải trí, sự kiện và trải nghiệm đẳng cấp." />
+  <title>EMPIRE CLUB - Tết Bính Ngọ 2026 🐎</title>
+  <meta name="description" content="Empire Club – Đón Tết Bính Ngọ 2026 với không gian giải trí đẳng cấp và ưu đãi đặc biệt" />
 
-  <!-- Open Graph / Facebook / Zalo -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="EMPIRE CLUB" />
-  <meta property="og:title" content="EMPIRE CLUB" />
-  <meta property="og:description" content="Nơi đêm trở thành Đế Chế – Không gian giải trí đẳng cấp hàng đầu." />
+  <meta property="og:title" content="EMPIRE CLUB - Tết Bính Ngọ 2026" />
+  <meta property="og:description" content="Nơi đêm trở thành Đế Chế – Đón Tết với ưu đãi đặc biệt!" />
   <meta property="og:url" content="https://empireclub.club/" />
   <meta property="og:image" content="https://empireclub.club/assets/img/D653A195-74D9-4555-B2C9-3D0C6AB2F131.png" />
-  <meta property="og:image:secure_url" content="https://empireclub.club/assets/img/D653A195-74D9-4555-B2C9-3D0C6AB2F131.png" />
-  <meta property="og:image:type" content="image/png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
 
-  <!-- Twitter (bonus, không thừa) -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="EMPIRE CLUB" />
-  <meta name="twitter:description" content="Nơi đêm trở thành Đế Chế – Không gian giải trí đẳng cấp hàng đầu." />
-  <meta name="twitter:image" content="https://empireclub.club/assets/img/D653A195-74D9-4555-B2C9-3D0C6AB2F131.png" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Cormorant+Garamond:wght@300;400;600;700&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+<style>
+/* ==================== RESET & CUSTOM PROPERTIES ==================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Wine Red Theme */
+  --wine-red: #8B0000;
+  --deep-red: #5C0000;
+  --burgundy: #6B0F1A;
+  --maroon: #4A0404;
+  
+  /* Luxury Gold */
+  --gold: #FFD700;
+  --light-gold: #FFF4CC;
+  --dark-gold: #DAA520;
+  --bronze: #CD7F32;
+  
+  /* Accents */
+  --cream: #FFF8DC;
+  --ivory: #FFFFF0;
+  --black: #0A0A0A;
+  
+  /* Typography */
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Cormorant Garamond', serif;
+  --font-asian: 'Noto Serif', serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background: linear-gradient(135deg, var(--deep-red) 0%, var(--wine-red) 50%, var(--burgundy) 100%);
+  background-attachment: fixed;
+  color: var(--cream);
+  line-height: 1.7;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Decorative Wine Red Pattern Background */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(circle at 20% 50%, rgba(218, 165, 32, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255, 215, 0, 0.03) 0%, transparent 50%),
+    linear-gradient(135deg, transparent 25%, rgba(255, 215, 0, 0.02) 25%, rgba(255, 215, 0, 0.02) 50%, transparent 50%, transparent 75%, rgba(255, 215, 0, 0.02) 75%);
+  background-size: 100% 100%, 100% 100%, 80px 80px;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+/* Gold Grain Texture */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.03;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* ==================== TET BANNER ==================== */
+.tet-banner {
+  background: linear-gradient(135deg, var(--gold) 0%, var(--dark-gold) 100%);
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 3px solid var(--bronze);
+}
+
+.tet-banner::before {
+  content: '🧧';
+  position: absolute;
+  font-size: 5rem;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%) rotate(-15deg);
+  opacity: 0.2;
+  animation: floatLixi 4s ease-in-out infinite;
+}
+
+.tet-banner::after {
+  content: '🌼';
+  position: absolute;
+  font-size: 4rem;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%) rotate(15deg);
+  opacity: 0.25;
+  animation: floatFlower 5s ease-in-out infinite;
+}
+
+@keyframes floatLixi {
+  0%, 100% { transform: translateY(-50%) rotate(-15deg); }
+  50% { transform: translateY(-60%) rotate(-10deg); }
+}
+
+@keyframes floatFlower {
+  0%, 100% { transform: translateY(-50%) rotate(15deg); }
+  50% { transform: translateY(-40%) rotate(20deg); }
+}
+
+.tet-banner-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.tet-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.tet-icon {
+  font-size: 3.5rem;
+  animation: bounce 3s ease-in-out infinite;
+  filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3));
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+.tet-text strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--wine-red);
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  margin-bottom: 5px;
+}
+
+.tet-text small {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  color: var(--burgundy);
+  font-weight: 600;
+}
+
+.tet-cta {
+  background: var(--wine-red);
+  color: var(--gold);
+  padding: 15px 35px;
+  border-radius: 50px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 25px rgba(139, 0, 0, 0.4);
+  white-space: nowrap;
+  border: 2px solid var(--gold);
+}
+
+.tet-cta:hover {
+  background: var(--deep-red);
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 15px 40px rgba(255, 215, 0, 0.6);
+}
+
+/* ==================== HEADER ==================== */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(92, 0, 0, 0.95);
+  backdrop-filter: blur(15px);
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--gold);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+.header-cta {
+  background: linear-gradient(135deg, var(--gold), var(--dark-gold));
+  color: var(--wine-red);
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+}
+
+.header-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.6);
+}
+
+.nav {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.nav a {
+  color: var(--light-gold);
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--gold);
+  transition: width 0.3s ease;
+}
+
+.nav a:hover {
+  color: var(--gold);
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+.nav-cta {
+  background: var(--gold);
+  color: var(--wine-red);
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: 700;
+}
+
+.nav-cta::after {
+  display: none;
+}
+
+.lang-switch {
+  background: transparent;
+  border: 2px solid var(--gold);
+  color: var(--gold);
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.lang-switch:hover {
+  background: var(--gold);
+  color: var(--wine-red);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 30px;
+  height: 3px;
+  background: var(--gold);
+  transition: all 0.3s ease;
+  border-radius: 3px;
+}
+
+/* ==================== HERO ==================== */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, 
+    rgba(139, 0, 0, 0.7) 0%, 
+    rgba(92, 0, 0, 0.5) 50%, 
+    rgba(107, 15, 26, 0.7) 100%);
+  z-index: 2;
+}
+
+/* Decorative Elements */
+.hero-overlay::before {
+  content: '🧧';
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  font-size: 6rem;
+  opacity: 0.15;
+  animation: floatLixi 6s ease-in-out infinite;
+}
+
+.hero-overlay::after {
+  content: '🌼';
+  position: absolute;
+  bottom: 15%;
+  right: 10%;
+  font-size: 5rem;
+  opacity: 0.2;
+  animation: floatFlower 7s ease-in-out infinite reverse;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  padding: 60px 30px;
+}
+
+.hero-brand {
+  margin-bottom: 40px;
+}
+
+.hero-brand img {
+  width: 220px;
+  height: auto;
+  margin-bottom: 30px;
+  filter: drop-shadow(0 0 40px rgba(255, 215, 0, 0.8));
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-25px); }
+}
+
+.hero-brand h1 {
+  font-family: var(--font-display);
+  font-size: 6rem;
+  font-weight: 900;
+  letter-spacing: 15px;
+  color: var(--gold);
+  text-shadow: 
+    0 0 20px rgba(255, 215, 0, 0.8),
+    0 0 40px rgba(255, 215, 0, 0.6),
+    4px 4px 8px rgba(0, 0, 0, 0.8);
+  animation: glow 3s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 
+      0 0 20px rgba(255, 215, 0, 0.8),
+      0 0 40px rgba(255, 215, 0, 0.6),
+      4px 4px 8px rgba(0, 0, 0, 0.8);
+  }
+  to {
+    text-shadow: 
+      0 0 30px rgba(255, 215, 0, 1),
+      0 0 60px rgba(255, 215, 0, 0.8),
+      4px 4px 8px rgba(0, 0, 0, 0.8);
+  }
+}
+
+.hero-content > p {
+  font-family: var(--font-body);
+  font-size: 2.2rem;
+  margin: 30px 0 50px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  color: var(--light-gold);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.hero-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--gold) 0%, var(--dark-gold) 100%);
+  color: var(--wine-red);
+  padding: 25px 60px;
+  border-radius: 60px;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-decoration: none;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 
+    0 15px 40px rgba(255, 215, 0, 0.4),
+    inset 0 -3px 10px rgba(0, 0, 0, 0.2);
+  border: 3px solid var(--light-gold);
+}
+
+.hero-btn:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 
+    0 25px 60px rgba(255, 215, 0, 0.7),
+    inset 0 -3px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ==================== VOUCHERS ==================== */
+.vouchers {
+  padding: 120px 30px;
+  background: linear-gradient(180deg, 
+    rgba(92, 0, 0, 0.3) 0%, 
+    rgba(139, 0, 0, 0.5) 50%, 
+    rgba(92, 0, 0, 0.3) 100%);
+  position: relative;
+}
+
+/* Decorative LiXi Background */
+.vouchers::before,
+.vouchers::after {
+  content: '🧧';
+  position: absolute;
+  font-size: 8rem;
+  opacity: 0.08;
+}
+
+.vouchers::before {
+  top: 10%;
+  left: 5%;
+  transform: rotate(-20deg);
+}
+
+.vouchers::after {
+  bottom: 10%;
+  right: 5%;
+  transform: rotate(25deg);
+}
+
+.vouchers-header {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 80px;
+}
+
+.section-tag {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--gold), var(--dark-gold));
+  color: var(--wine-red);
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  box-shadow: 0 5px 20px rgba(255, 215, 0, 0.3);
+}
+
+.vouchers-header h2 {
+  font-family: var(--font-display);
+  font-size: 4.5rem;
+  margin-bottom: 25px;
+  color: var(--gold);
+  font-weight: 900;
+  text-shadow: 
+    0 0 30px rgba(255, 215, 0, 0.6),
+    3px 3px 8px rgba(0, 0, 0, 0.8);
+  letter-spacing: 5px;
+}
+
+.vouchers-header p {
+  font-size: 1.4rem;
+  color: var(--cream);
+  line-height: 1.9;
+  font-weight: 400;
+}
+
+.voucher-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.voucher-card {
+  background: linear-gradient(145deg, rgba(74, 4, 4, 0.9), rgba(92, 0, 0, 0.8));
+  border-radius: 25px;
+  padding: 50px 40px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 3px solid var(--gold);
+  box-shadow: 
+    0 10px 40px rgba(0, 0, 0, 0.5),
+    inset 0 0 30px rgba(255, 215, 0, 0.1);
+}
+
+.voucher-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.15) 0%, transparent 70%);
+  transform: rotate(45deg);
+  transition: all 0.5s ease;
+}
+
+.voucher-card:hover {
+  transform: translateY(-15px) scale(1.02);
+  border-color: var(--light-gold);
+  box-shadow: 
+    0 20px 60px rgba(255, 215, 0, 0.4),
+    inset 0 0 40px rgba(255, 215, 0, 0.2);
+}
+
+.voucher-card:hover::before {
+  transform: rotate(90deg);
+}
+
+.voucher-badge {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  background: var(--gold);
+  color: var(--wine-red);
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.5);
+}
+
+.voucher-badge.vip {
+  background: linear-gradient(135deg, var(--dark-gold), var(--bronze));
+  color: var(--cream);
+}
+
+.voucher-badge.hot {
+  background: linear-gradient(135deg, #FFD700, #FF8C00);
+  color: var(--wine-red);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+}
+
+.voucher-icon {
+  font-size: 4.5rem;
+  margin-bottom: 25px;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));
+}
+
+.voucher-title {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--gold);
+  font-weight: 700;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.voucher-desc {
+  color: var(--light-gold);
+  margin-bottom: 30px;
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+.voucher-code {
+  background: rgba(255, 215, 0, 0.15);
+  border: 2px dashed var(--gold);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 30px 0;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.voucher-code:hover {
+  background: rgba(255, 215, 0, 0.25);
+  border-style: solid;
+}
+
+.voucher-code span {
+  color: var(--cream);
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.voucher-code strong {
+  color: var(--gold);
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 900;
+  letter-spacing: 4px;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.voucher-expiry {
+  text-align: center;
+  color: var(--light-gold);
+  font-size: 1rem;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.voucher-btn {
+  display: block;
+  width: 100%;
+  background: linear-gradient(135deg, var(--gold), var(--dark-gold));
+  color: var(--wine-red);
+  padding: 18px;
+  border-radius: 15px;
+  text-align: center;
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
+  border: 2px solid var(--light-gold);
+}
+
+.voucher-btn:hover {
+  background: linear-gradient(135deg, var(--dark-gold), var(--bronze));
+  transform: scale(1.05);
+  box-shadow: 0 12px 35px rgba(255, 215, 0, 0.5);
+}
+
+.voucher-terms {
+  max-width: 1000px;
+  margin: 80px auto 0;
+  padding: 40px;
+  background: rgba(139, 0, 0, 0.3);
+  border-radius: 20px;
+  border-left: 5px solid var(--gold);
+  border-right: 5px solid var(--gold);
+}
+
+.voucher-terms strong {
+  display: block;
+  margin-bottom: 20px;
+  color: var(--gold);
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+}
+
+.voucher-terms ul {
+  list-style: none;
+  padding: 0;
+}
+
+.voucher-terms li {
+  padding: 12px 0 12px 35px;
+  position: relative;
+  color: var(--cream);
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.voucher-terms li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+/* ==================== VIDEO CAROUSEL ==================== */
+.video-carousel {
+  padding: 120px 0;
+  background: rgba(92, 0, 0, 0.4);
+}
+
+.video-header {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 60px;
+  padding: 0 30px;
+}
+
+.video-tag {
+  display: inline-block;
+  background: rgba(255, 215, 0, 0.2);
+  color: var(--gold);
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+  border: 2px solid var(--gold);
+}
+
+.video-header h2 {
+  font-family: var(--font-display);
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  color: var(--gold);
+  font-weight: 900;
+  text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+.video-header small {
+  font-size: 1.5rem;
+  color: var(--light-gold);
+  font-weight: 400;
+}
+
+.video-desc {
+  margin-top: 25px;
+  color: var(--cream);
+  line-height: 1.9;
+  font-size: 1.15rem;
+}
+
+.carousel-container {
+  position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.carousel-wrapper {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--gold) rgba(255, 215, 0, 0.2);
+  padding: 20px 0;
+}
+
+.carousel-wrapper::-webkit-scrollbar {
+  height: 12px;
+}
+
+.carousel-wrapper::-webkit-scrollbar-track {
+  background: rgba(255, 215, 0, 0.1);
+  border-radius: 10px;
+}
+
+.carousel-wrapper::-webkit-scrollbar-thumb {
+  background: var(--gold);
+  border-radius: 10px;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 30px;
+  padding: 10px;
+}
+
+.video-item {
+  flex: 0 0 500px;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.6);
+  transition: all 0.4s ease;
+  border: 3px solid var(--gold);
+  cursor: pointer;
+}
+
+.video-item:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 25px 70px rgba(255, 215, 0, 0.4);
+}
+
+.video-item video {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(139, 0, 0, 0.8) 0%, transparent 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.video-item.playing .video-overlay {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.play-button {
+  width: 80px;
+  height: 80px;
+  background: var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: var(--wine-red);
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 30px rgba(255, 215, 0, 0.5);
+}
+
+.video-item:hover .play-button {
+  transform: scale(1.15);
+  box-shadow: 0 12px 40px rgba(255, 215, 0, 0.7);
+}
+
+.volume-control {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: rgba(255, 215, 0, 0.9);
+  color: var(--wine-red);
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.video-item.playing .volume-control {
+  opacity: 1;
+}
+
+.volume-control:hover {
+  background: var(--gold);
+  transform: scale(1.1);
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--gold);
+  color: var(--wine-red);
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-btn:hover {
+  background: var(--dark-gold);
+  transform: translateY(-50%) scale(1.15);
+  box-shadow: 0 12px 35px rgba(255, 215, 0, 0.6);
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
+
+/* ==================== ABOUT ==================== */
+.about {
+  padding: 120px 30px;
+  text-align: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about h2 {
+  font-family: var(--font-display);
+  font-size: 4rem;
+  margin-bottom: 40px;
+  color: var(--gold);
+  font-weight: 900;
+  text-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+  letter-spacing: 5px;
+}
+
+.about p {
+  font-size: 1.3rem;
+  line-height: 2;
+  color: var(--cream);
+  font-weight: 400;
+}
+
+/* ==================== SERVICES ==================== */
+.services {
+  padding: 120px 30px;
+  background: rgba(139, 0, 0, 0.3);
+  text-align: center;
+}
+
+.services h2 {
+  font-family: var(--font-display);
+  font-size: 4rem;
+  margin-bottom: 60px;
+  color: var(--gold);
+  font-weight: 900;
+  text-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+}
+
+.service-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+}
+
+.card {
+  background: linear-gradient(145deg, rgba(74, 4, 4, 0.8), rgba(92, 0, 0, 0.7));
+  padding: 60px 40px;
+  border-radius: 20px;
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--gold);
+  transition: all 0.4s ease;
+  border: 3px solid var(--gold);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+  transform: translateY(-15px) scale(1.05);
+  box-shadow: 0 20px 60px rgba(255, 215, 0, 0.4);
+  border-color: var(--light-gold);
+}
+
+.note {
+  color: var(--light-gold);
+  font-style: italic;
+  margin-top: 40px;
+  font-size: 1.1rem;
+}
+
+/* ==================== GALLERY ==================== */
+.gallery {
+  padding: 120px 30px;
+  text-align: center;
+}
+
+.gallery h2 {
+  font-family: var(--font-display);
+  font-size: 4rem;
+  margin-bottom: 60px;
+  color: var(--gold);
+  font-weight: 900;
+  text-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  max-width: 1400px;
+  margin: 0 auto 40px;
+}
+
+.img-box {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  transition: all 0.4s ease;
+  border: 3px solid var(--gold);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5);
+}
+
+.img-box:hover {
+  transform: scale(1.08);
+  box-shadow: 0 20px 60px rgba(255, 215, 0, 0.4);
+}
+
+/* ==================== FOOTER ==================== */
+.footer {
+  padding: 80px 30px;
+  background: linear-gradient(180deg, var(--deep-red), var(--maroon));
+  border-top: 3px solid var(--gold);
+}
+
+.footer-box {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-title {
+  font-family: var(--font-display);
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  color: var(--gold);
+  font-weight: 900;
+  text-shadow: 0 0 25px rgba(255, 215, 0, 0.6);
+}
+
+.footer-slogan {
+  font-size: 1.3rem;
+  color: var(--light-gold);
+  margin-bottom: 40px;
+  font-family: var(--font-body);
+}
+
+.footer-divider {
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  margin: 40px 0;
+}
+
+.footer-info p {
+  margin: 20px 0;
+  color: var(--cream);
+  font-size: 1.1rem;
+}
+
+.footer-info a {
+  color: var(--gold);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 40px 0;
+}
+
+.footer-social a {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 215, 0, 0.2);
+  border: 2px solid var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  color: var(--gold);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+  background: var(--gold);
+  color: var(--wine-red);
+  transform: translateY(-8px) scale(1.15);
+  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.5);
+}
+
+.footer-copy {
+  margin-top: 40px;
+  color: var(--light-gold);
+  font-size: 1rem;
+}
+
+/* ==================== FLOAT CONTACT ==================== */
+.contact-float {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 999;
+}
+
+.lux-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.lux-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  animation: floatContact 4s ease-in-out infinite;
+}
+
+@keyframes floatContact {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+.lux-icon.phone {
+  background: linear-gradient(135deg, var(--gold), var(--dark-gold));
+  color: var(--wine-red);
+  border: 3px solid var(--light-gold);
+}
+
+.lux-icon.fb {
+  background: linear-gradient(135deg, #1877F2, #0D5DBF);
+  color: white;
+  border: 3px solid #5B9EFF;
+}
+
+.lux-icon.zalo {
+  background: linear-gradient(135deg, #0068FF, #0052CC);
+  color: white;
+  border: 3px solid #4D9EFF;
+}
+
+.lux-icon:hover {
+  transform: scale(1.2) translateY(-10px);
+  box-shadow: 0 15px 45px rgba(255, 215, 0, 0.6);
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 1024px) {
+  .hero-brand h1 {
+    font-size: 4rem;
+    letter-spacing: 10px;
+  }
+  
+  .vouchers-header h2,
+  .about h2,
+  .services h2,
+  .gallery h2 {
+    font-size: 3rem;
+  }
+  
+  .video-item {
+    flex: 0 0 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tet-banner-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .tet-text strong {
+    font-size: 1.5rem;
+  }
+  
+  .nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(92, 0, 0, 0.98);
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+    border-top: 2px solid var(--gold);
+  }
+  
+  .nav.active {
+    display: flex;
+  }
+  
+  .hamburger {
+    display: flex;
+  }
+  
+  .hero-brand h1 {
+    font-size: 3rem;
+    letter-spacing: 5px;
+  }
+  
+  .hero-content > p {
+    font-size: 1.5rem;
+  }
+  
+  .voucher-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .carousel-container {
+    padding: 0 60px;
+  }
+  
+  .video-item {
+    flex: 0 0 320px;
+  }
+  
+  .carousel-btn {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .contact-float {
+    bottom: 25px;
+    right: 25px;
+  }
+  
+  .lux-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.7rem;
+  }
+}
+  
+
+body {
+  background: linear-gradient(
+    120deg,
+    #000000 0%,
+    #1a1a1a 40%,
+    #3a3a3a 50%,
+    #1a1a1a 60%,
+    #000000 100%
+  );
+  color: #d4af37;
+}
+body {
+  background: #000;
+  background-image: 
+    radial-gradient(rgba(212,175,55,0.08) 1px, transparent 1px);
+  background-size: 20px 20px;
+  color: #d4af37;
+}
+
+/* ============================= */
+/* ====== GLOBAL CLEAN FIX ===== */
+/* ============================= */
+
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  background: #000;
+  background-image: radial-gradient(rgba(212,175,55,0.07) 1px, transparent 1px);
+  background-size: 22px 22px;
+  color: #d4af37;
+  overflow-x: hidden;
+}
+
+
+/* ============================= */
+/* ========= HERO FIX ========= */
+/* ============================= */
+
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+
+  /* Làm video rõ hơn */
+  filter: brightness(1.2) contrast(1.15) saturate(1.15);
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  /* Overlay tối vừa đủ để chữ nổi */
+  background: linear-gradient(
+    135deg,
+    rgba(0,0,0,0.45) 0%,
+    rgba(0,0,0,0.25) 50%,
+    rgba(0,0,0,0.45) 100%
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 5;
+  text-align: center;
+}
+
+
+/* ============================= */
+/* ===== LUXURY 3D TITLE ====== */
+/* ============================= */
+
+.hero-title {
+  font-size: 64px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+
+  background: linear-gradient(
+    180deg,
+    #fff6c2 0%,
+    #ffd700 40%,
+    #c9a227 70%,
+    #a67c00 100%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow:
+    0 4px 10px rgba(0,0,0,0.7),
+    0 0 25px rgba(255,215,0,0.6);
+}
+
+
+/* ============================= */
+/* ===== BUTTON LUXURY ======== */
+/* ============================= */
+
+.btn-gold {
+  display: inline-block;
+  padding: 14px 32px;
+  background: linear-gradient(45deg, #ffd700, #c9a227);
+  color: #000;
+  font-weight: bold;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  box-shadow: 0 5px 20px rgba(255,215,0,0.4);
+}
+
+.btn-gold:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(255,215,0,0.6);
+}
+
+</style>
 </head>
 
 <body>
 
+<!-- TET BANNER -->
+<div class="tet-banner">
+  <div class="tet-banner-content">
+    <div class="tet-left">
+      <span class="tet-icon">🐎</span>
+      <div class="tet-text">
+        <strong data-vi="CHÚC MỪNG NĂM MỚI BÍNH NGỌ 2026" data-en="HAPPY LUNAR NEW YEAR 2026">
+          CHÚC MỪNG NĂM MỚI BÍNH NGỌ 2026
+        </strong>
+        <small data-vi="Đón Tết tại Empire - Nhận ưu đãi đặc biệt 🧧🌼" data-en="Celebrate Tet at Empire - Special Offers 🧧🌼">
+          Đón Tết tại Empire - Nhận ưu đãi đặc biệt 🧧🌼
+        </small>
+      </div>
+    </div>
+    <a href="#vouchers" class="tet-cta" data-vi="Xem ưu đãi 🎁" data-en="View Offers 🎁">
+      Xem ưu đãi 🎁
+    </a>
+  </div>
+</div>
 
-<header class="header header-center">
-
-  <!-- CTA HEADER -->
+<!-- HEADER -->
+<header class="header">
   <a href="tel:0919918178" class="header-cta" data-vi="📞 Đặt bàn" data-en="📞 Reserve Table">
     📞 Đặt bàn
   </a>
 
-  <!-- NAV -->
   <nav class="nav" id="navMenu">
-    <a href="index.html" data-vi="Trang Chủ" data-en="Home">Trang Chủ</a>
-    <a href="about.html" data-vi="Giới thiệu" data-en="About">Giới thiệu</a>
-    <a href="services.html" data-vi="Gói bàn" data-en="Table Packages">Gói bàn</a>
-    <a href="gallery.html" data-vi="Không gian" data-en="Gallery">Không gian</a>
-    <a href="events.html" data-vi="Sự kiện" data-en="Events">Sự kiện</a>
-    <a href="tel:0919918178" class="nav-cta"
-       data-vi="📞 Đặt bàn" data-en="📞 Reserve Table">
-       📞 Đặt bàn
+    <a href="#" data-vi="Trang Chủ" data-en="Home">Trang Chủ</a>
+    <a href="#about" data-vi="Giới thiệu" data-en="About">Giới thiệu</a>
+    <a href="#services" data-vi="Gói bàn" data-en="Table Packages">Gói bàn</a>
+    <a href="#gallery" data-vi="Không gian" data-en="Gallery">Không gian</a>
+    <a href="#vouchers" data-vi="Ưu đãi" data-en="Offers">Ưu đãi</a>
+    <a href="tel:0919918178" class="nav-cta" data-vi="📞 Đặt bàn" data-en="📞 Reserve Table">
+      📞 Đặt bàn
     </a>
   </nav>
 
-  <!-- LANGUAGE SWITCH -->
   <button class="lang-switch" id="langToggle">EN</button>
 
-  <!-- HAMBURGER -->
-  <div class="hamburger hamburger-right" id="hamburger">
+  <div class="hamburger" id="hamburger">
     <span></span>
     <span></span>
     <span></span>
   </div>
-
 </header>
 
-
-
-
-
 <!-- HERO -->
-<section class="hero hero-video">
-
-  <!-- VIDEO BACKGROUND -->
-  <video
-    class="hero-bg"
-    src="https://pub-e9425b1947244ea28f3dd00295e9b563.r2.dev/0d132637-1993-4b7a-bb97-c2eb197ea1aa.mp4"
-    autoplay
-    muted
-    loop
-    playsinline
-  ></video>
-
-  <!-- LỚP TỐI -->
+<section class="hero">
+  <video class="hero-bg" src="https://pub-e9425b1947244ea28f3dd00295e9b563.r2.dev/0d132637-1993-4b7a-bb97-c2eb197ea1aa.mp4" autoplay muted loop playsinline></video>
+  
   <div class="hero-overlay"></div>
 
   <div class="hero-content">
-
     <div class="hero-brand">
-      <img
-        src="assets/img/D653A195-74D9-4555-B2C9-3D0C6AB2F131.png"
-        alt="Empire Club Logo"
-      >
+      <img src="assets/img/D653A195-74D9-4555-B2C9-3D0C6AB2F131.png" alt="Empire Club Logo">
       <h1>EMPIRE CLUB</h1>
     </div>
 
-    <!-- SLOGAN SONG NGỮ -->
-    <p
-      data-vi="Nơi đêm trở thành Đế Chế"
-      data-en="Where Night Becomes Empire"
-    >
+    <p data-vi="Nơi đêm trở thành Đế Chế" data-en="Where Night Becomes Empire">
       Nơi đêm trở thành Đế Chế
     </p>
 
-    <!-- CTA SONG NGỮ -->
-    <a
-      href="tel:0919918178"
-      class="hero-btn"
-      data-vi="📞 Đặt bàn ngay"
-      data-en="📞 Reserve Now"
-    >
+    <a href="tel:0919918178" class="hero-btn" data-vi="📞 Đặt bàn ngay" data-en="📞 Reserve Now">
       📞 Đặt bàn ngay
     </a>
+  </div>
+</section>
+
+<!-- VOUCHERS -->
+<section class="vouchers" id="vouchers">
+  <div class="vouchers-header">
+    <span class="section-tag">🎁 ƯU ĐÃI TẾT</span>
+    <h2 data-vi="Voucher Đặc Biệt" data-en="Special Vouchers">
+      Voucher Đặc Biệt
+    </h2>
+    <p data-vi="Đón xuân Bính Ngọ với những ưu đãi độc quyền chỉ có tại Empire Club" 
+       data-en="Welcome the Year of the Horse with exclusive offers at Empire Club">
+      Đón xuân Bính Ngọ với những ưu đãi độc quyền chỉ có tại Empire Club
+    </p>
+  </div>
+
+  <div class="voucher-grid">
+    
+    <!-- Voucher 1 -->
+    <div class="voucher-card">
+      <div class="voucher-badge" data-vi="Phổ Biến" data-en="Popular">Phổ Biến</div>
+      <div class="voucher-icon">🎊</div>
+      <h3 class="voucher-title" data-vi="Giảm 5% Tổng Bill" data-en="5% Off Total Bill">
+        Giảm 5% Tổng Bill
+      </h3>
+      <p class="voucher-desc" data-vi="Áp dụng cho hóa đơn từ 3.000.000đ" data-en="Applied for bills from 3,000,000 VND">
+        Áp dụng cho hóa đơn từ 3.000.000đ
+      </p>
+      <div class="voucher-code" data-code="TET2026">
+        <span data-vi="Mã:" data-en="Code:">Mã:</span>
+        <strong>TET2026</strong>
+      </div>
+      <div class="voucher-expiry" data-vi="Từ 15/01 - 10/02/2026" data-en="From Jan 15 - Feb 10, 2026">
+        Từ 15/01 - 10/02/2026
+      </div>
+      <a href="tel:0919918178" class="voucher-btn" data-vi="Đặt bàn ngay" data-en="Reserve Now">
+        Đặt bàn ngay
+      </a>
+    </div>
+
+    <!-- Voucher 2 -->
+    <div class="voucher-card">
+      <div class="voucher-badge vip" data-vi="VIP" data-en="VIP">VIP</div>
+      <div class="voucher-icon">🍇</div>
+      <h3 class="voucher-title" data-vi="Tặng Mâm Trái Cây Cao Cấp" data-en="Free Premium Fruit Platter">
+        Tặng Mâm Trái Cây Cao Cấp
+      </h3>
+      <p class="voucher-desc" data-vi="Mâm trái cây nhập khẩu trị giá 800.000đ" data-en="Imported fruit platter worth 800,000 VND">
+        Mâm trái cây nhập khẩu trị giá 800.000đ
+      </p>
+      <div class="voucher-code" data-code="FRUIT2026">
+        <span data-vi="Mã:" data-en="Code:">Mã:</span>
+        <strong>FRUIT2026</strong>
+      </div>
+      <div class="voucher-expiry" data-vi="Cho booking từ 5.000.000đ" data-en="For bookings from 5,000,000 VND">
+        Cho booking từ 5.000.000đ
+      </div>
+      <a href="tel:0919918178" class="voucher-btn" data-vi="Đặt bàn ngay" data-en="Reserve Now">
+        Đặt bàn ngay
+      </a>
+    </div>
+
+    <!-- Voucher 3 -->
+    <div class="voucher-card">
+      <div class="voucher-badge hot" data-vi="Hot Deal" data-en="Hot Deal">Hot Deal</div>
+      <div class="voucher-icon">🍺</div>
+      <h3 class="voucher-title" data-vi="Tặng Combo Bia + Snack" data-en="Free Beer + Snacks Combo">
+        Tặng Combo Bia + Snack
+      </h3>
+      <p class="voucher-desc" data-vi="6 chai bia + Combo snack đặc biệt" data-en="6 beers + Special snacks combo">
+        6 chai bia + Combo snack đặc biệt
+      </p>
+      <div class="voucher-code" data-code="PARTY2026">
+        <span data-vi="Mã:" data-en="Code:">Mã:</span>
+        <strong>PARTY2026</strong>
+      </div>
+      <div class="voucher-expiry" data-vi="Đặt trước 24h - Áp dụng T5-T7" data-en="Book 24h ahead - Thu-Sat only">
+        Đặt trước 24h - Áp dụng T5-T7
+      </div>
+      <a href="tel:0919918178" class="voucher-btn" data-vi="Đặt bàn ngay" data-en="Reserve Now">
+        Đặt bàn ngay
+      </a>
+    </div>
 
   </div>
 
+  <div class="voucher-terms">
+    <p>
+      <strong data-vi="📋 Điều kiện áp dụng:" data-en="📋 Terms & Conditions:">📋 Điều kiện áp dụng:</strong>
+    </p>
+    <ul>
+      <li data-vi="Vui lòng thông báo mã voucher khi đặt bàn qua hotline" 
+          data-en="Please inform voucher code when booking via hotline">
+        Vui lòng thông báo mã voucher khi đặt bàn qua hotline
+      </li>
+      <li data-vi="Không áp dụng đồng thời nhiều voucher cho 1 đơn" 
+          data-en="Cannot combine multiple vouchers for one order">
+        Không áp dụng đồng thời nhiều voucher cho 1 đơn
+      </li>
+      <li data-vi="Số lượng voucher có giới hạn, ưu tiên khách đặt trước" 
+          data-en="Limited vouchers available, priority for advance bookings">
+        Số lượng voucher có giới hạn, ưu tiên khách đặt trước
+      </li>
+    </ul>
+  </div>
 </section>
 
-
-
-<!-- ABOUT -->
-<section class="about" id="about">
-  <h2
-    data-vi="Về chúng tôi"
-    data-en="About Us"
-  >
-    Về chúng tôi
-  </h2>
-
-  <p
-    data-vi="EMPIRE CLUB là điểm đến giải trí đẳng cấp bậc nhất tại trung tâm Quận 1,
-    nơi hội tụ ánh sáng, âm nhạc và phong cách sống thượng lưu.
-    Không gian được thiết kế sang trọng với tone tím neon chủ đạo,
-    mang đến trải nghiệm thị giác cuốn hút và khác biệt.
-    EMPIRE không chỉ là nơi giải trí, mà là nơi khẳng định đẳng cấp của giới tinh hoa."
-    data-en="EMPIRE CLUB is one of the most elite nightlife destinations in the heart of District 1,
-    where lights, music, and a luxurious lifestyle come together.
-    The venue is designed with a sophisticated neon-purple theme,
-    delivering a visually captivating and distinctive experience.
-    EMPIRE is not just a place to party, but a statement of prestige for the elite."
-  >
-    EMPIRE CLUB là điểm đến giải trí đẳng cấp bậc nhất tại trung tâm Quận 1,
-    nơi hội tụ ánh sáng, âm nhạc và phong cách sống thượng lưu.
-    Không gian được thiết kế sang trọng với tone tím neon chủ đạo,
-    mang đến trải nghiệm thị giác cuốn hút và khác biệt.
-    EMPIRE không chỉ là nơi giải trí, mà là nơi khẳng định đẳng cấp của giới tinh hoa.
-  </p>
-</section>
-<section class="video-scroll">
+<!-- VIDEO CAROUSEL -->
+<section class="video-carousel">
   <div class="video-header">
     <span class="video-tag">GALLERY · THƯ VIỆN</span>
-
     <h2>
       Empire Moments<br>
       <small>Khoảnh khắc tạo nên đế chế đêm</small>
     </h2>
-
     <p class="video-desc">
-      Những thước phim ghi lại nhịp đập của EMPIRE CLUB – nơi ánh sáng, âm nhạc
-      và cảm xúc hòa làm một.<br>
+      Những thước phim ghi lại nhịp đập của EMPIRE CLUB – nơi ánh sáng, âm nhạc và cảm xúc hòa làm một.<br>
       <em>Moments that define the night — where music, lights, and emotions collide.</em>
     </p>
   </div>
 
-  <div class="video-list">
-    <video src="https://pub-e9425b1947244ea28f3dd00295e9b563.r2.dev/0d132637-1993-4b7a-bb97-c2eb197ea1aa.mp4" autoplay muted loop playsinline></video>
+  <div class="carousel-container">
+    <button class="carousel-btn prev" id="prevBtn">‹</button>
+    
+    <div class="carousel-wrapper" id="carouselWrapper">
+      <div class="carousel-track">
+        
+        <div class="video-item">
+          <video src="https://pub-e9425b1947244ea28f3dd00295e9b563.r2.dev/0d132637-1993-4b7a-bb97-c2eb197ea1aa.mp4" loop playsinline></video>
+          <div class="video-overlay">
+            <div class="play-button">▶</div>
+          </div>
+          <button class="volume-control">🔊</button>
+        </div>
 
-    <video src="https://pub-e9425b1947244ea28f3dd00295e9b563.r2.dev/23f4defa-a593-410a-adfd-63f27ffbc742.mp4" autoplay muted loop playsinline></video>
+        <div class="video-item">
+          <video src="https://pub-e9425b1947244ea28f3dd00295e9b563.r2.dev/23f4defa-a593-410a-adfd-63f27ffbc742.mp4" loop playsinline></video>
+          <div class="video-overlay">
+            <div class="play-button">▶</div>
+          </div>
+          <button class="volume-control">🔊</button>
+        </div>
 
-    <video src="https://pub-e9425b1947244ea28f3dd00295e9b563.r2.dev/83c999ce-499c-4562-86e6-273fef3bb78a.mp4" autoplay muted loop playsinline></video>
+        <div class="video-item">
+          <video src="https://pub-e9425b1947244ea28f3dd00295e9b563.r2.dev/83c999ce-499c-4562-86e6-273fef3bb78a.mp4" loop playsinline></video>
+          <div class="video-overlay">
+            <div class="play-button">▶</div>
+          </div>
+          <button class="volume-control">🔊</button>
+        </div>
 
-    <video src="https://pub-e9425b1947244ea28f3dd00295e9b563.r2.dev/c84cd51f-ceec-458c-8291-465ad9ce08d4.mp4" autoplay muted loop playsinline></video>
+        <div class="video-item">
+          <video src="https://pub-e9425b1947244ea28f3dd00295e9b563.r2.dev/c84cd51f-ceec-458c-8291-465ad9ce08d4.mp4" loop playsinline></video>
+          <div class="video-overlay">
+            <div class="play-button">▶</div>
+          </div>
+          <button class="volume-control">🔊</button>
+        </div>
 
-    <video src="https://pub-e9425b1947244ea28f3dd00295e9b563.r2.dev/f4617beb-559a-4c3e-8db2-6c08561a89c2.mp4" autoplay muted loop playsinline></video>
+        <div class="video-item">
+          <video src="https://pub-e9425b1947244ea28f3dd00295e9b563.r2.dev/f4617beb-559a-4c3e-8db2-6c08561a89c2.mp4" loop playsinline></video>
+          <div class="video-overlay">
+            <div class="play-button">▶</div>
+          </div>
+          <button class="volume-control">🔊</button>
+        </div>
 
-    <video src="https://pub-e9425b1947244ea28f3dd00295e9b563.r2.dev/fd0bf6fb-e4d4-4c49-8332-27172f5ba4af.mp4" autoplay muted loop playsinline></video>
+        <div class="video-item">
+          <video src="https://pub-e9425b1947244ea28f3dd00295e9b563.r2.dev/fd0bf6fb-e4d4-4c49-8332-27172f5ba4af.mp4" loop playsinline></video>
+          <div class="video-overlay">
+            <div class="play-button">▶</div>
+          </div>
+          <button class="volume-control">🔊</button>
+        </div>
+
+      </div>
+    </div>
+
+    <button class="carousel-btn next" id="nextBtn">›</button>
   </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <h2 data-vi="Về chúng tôi" data-en="About Us">
+    Về chúng tôi
+  </h2>
+
+  <p data-vi="EMPIRE CLUB là điểm đến giải trí đẳng cấp bậc nhất tại trung tâm Quận 1, nơi hội tụ ánh sáng, âm nhạc và phong cách sống thượng lưu. Không gian được thiết kế sang trọng với tone tím neon chủ đạo, mang đến trải nghiệm thị giác cuốn hút và khác biệt. EMPIRE không chỉ là nơi giải trí, mà là nơi khẳng định đẳng cấp của giới tinh hoa."
+     data-en="EMPIRE CLUB is one of the most elite nightlife destinations in the heart of District 1, where lights, music, and a luxurious lifestyle come together. The venue is designed with a sophisticated neon-purple theme, delivering a visually captivating and distinctive experience. EMPIRE is not just a place to party, but a statement of prestige for the elite.">
+    EMPIRE CLUB là điểm đến giải trí đẳng cấp bậc nhất tại trung tâm Quận 1, nơi hội tụ ánh sáng, âm nhạc và phong cách sống thượng lưu. Không gian được thiết kế sang trọng với tone tím neon chủ đạo, mang đến trải nghiệm thị giác cuốn hút và khác biệt. EMPIRE không chỉ là nơi giải trí, mà là nơi khẳng định đẳng cấp của giới tinh hoa.
+  </p>
 </section>
 
 <!-- SERVICES -->
 <section class="services" id="services">
-  <h2
-    data-vi="Dịch vụ & Gói bàn"
-    data-en="Services & Table Packages"
-  >
+  <h2 data-vi="Dịch vụ & Gói bàn" data-en="Services & Table Packages">
     Dịch vụ & Gói bàn
   </h2>
 
@@ -201,20 +1674,14 @@
     <div class="card" data-vi="Khu vực riêng tư" data-en="Private Area">Khu vực riêng tư</div>
   </div>
 
-  <p class="note"
-     data-vi="* Nội dung chi tiết sẽ được cập nhật"
-     data-en="* Detailed content will be updated soon"
-  >
+  <p class="note" data-vi="* Nội dung chi tiết sẽ được cập nhật" data-en="* Detailed content will be updated soon">
     * Nội dung chi tiết sẽ được cập nhật
   </p>
 </section>
 
 <!-- GALLERY -->
 <section class="gallery" id="gallery">
-  <h2
-    data-vi="Không gian"
-    data-en="Our Space"
-  >
+  <h2 data-vi="Không gian" data-en="Our Space">
     Không gian
   </h2>
 
@@ -225,45 +1692,32 @@
     <div class="img-box" style="background-image:url('assets/img/vibe/IMG_9991.jpeg')"></div>
   </div>
 
-  <p class="note"
-     data-vi="Không gian sang trọng – ánh sáng & âm nhạc chuẩn nightlife"
-     data-en="A luxurious space with premium lighting and nightlife-grade music"
-  >
+  <p class="note" data-vi="Không gian sang trọng – ánh sáng & âm nhạc chuẩn nightlife" data-en="A luxurious space with premium lighting and nightlife-grade music">
     Không gian sang trọng – ánh sáng & âm nhạc chuẩn nightlife
   </p>
 </section>
 
-
-
+<!-- FOOTER -->
 <footer class="footer">
   <div class="footer-box">
-
     <h3 class="footer-title">EMPIRE CLUB</h3>
 
-    <p class="footer-slogan"
-       data-vi="Nơi đêm trở thành Đế Chế"
-       data-en="Where Night Becomes Empire">
+    <p class="footer-slogan" data-vi="Nơi đêm trở thành Đế Chế" data-en="Where Night Becomes Empire">
       Nơi đêm trở thành Đế Chế
     </p>
 
     <div class="footer-divider"></div>
 
     <div class="footer-info">
-      <p
-        data-vi="📍 8 Nguyễn Văn Tráng, P. Phạm Ngũ Lão, Quận 1, TP.HCM"
-        data-en="📍 8 Nguyen Van Trang St, Pham Ngu Lao Ward, District 1, Ho Chi Minh City">
+      <p data-vi="📍 8 Nguyễn Văn Tráng, P. Phạm Ngũ Lão, Quận 1, TP.HCM" data-en="📍 8 Nguyen Van Trang St, Pham Ngu Lao Ward, District 1, Ho Chi Minh City">
         📍 8 Nguyễn Văn Tráng, P. Phạm Ngũ Lão, Quận 1, TP.HCM
       </p>
 
-      <p
-        data-vi="⏰ 20:00 – 04:00 · Mỗi đêm"
-        data-en="⏰ 20:00 – 04:00 · Every Night">
+      <p data-vi="⏰ 20:00 – 04:00 · Mỗi đêm" data-en="⏰ 20:00 – 04:00 · Every Night">
         ⏰ 20:00 – 04:00 · Mỗi đêm
       </p>
 
-      <p
-        data-vi="📞 Hotline / Zalo:"
-        data-en="📞 Hotline / Zalo:">
+      <p data-vi="📞 Hotline / Zalo:" data-en="📞 Hotline / Zalo:">
         📞 Hotline / Zalo:
         <a href="tel:0919918178">0919 918 178</a>
       </p>
@@ -275,38 +1729,258 @@
       <a href="https://zalo.me/0919918178" target="_blank">💬</a>
     </div>
 
-    <div class="footer-copy"
-         data-vi="© 2026 EMPIRE CLUB · Bản quyền được bảo lưu"
-         data-en="© 2026 EMPIRE CLUB · All rights reserved">
+    <div class="footer-copy" data-vi="© 2026 EMPIRE CLUB · Bản quyền được bảo lưu" data-en="© 2026 EMPIRE CLUB · All rights reserved">
       © 2026 EMPIRE CLUB · Bản quyền được bảo lưu
     </div>
-
   </div>
 </footer>
 
 <!-- FLOAT CONTACT -->
 <div class="contact-float">
   <div class="lux-contact">
-    <a href="tel:0919918178" class="lux-icon phone" aria-label="Hotline">
-      ☎
-    </a>
-
-    <a href="https://www.facebook.com/share/1Bhqbi2HWd/?mibextid=wwXIfr"
-       target="_blank"
-       class="lux-icon fb"
-       aria-label="Facebook">
-      f
-    </a>
-
-    <a href="https://zalo.me/0919918178"
-       target="_blank"
-       class="lux-icon zalo"
-       aria-label="Zalo">
-      💬
-    </a>
+    <a href="tel:0919918178" class="lux-icon phone" aria-label="Hotline">☎</a>
+    <a href="https://www.facebook.com/share/1Bhqbi2HWd/?mibextid=wwXIfr" target="_blank" class="lux-icon fb" aria-label="Facebook">f</a>
+    <a href="https://zalo.me/0919918178" target="_blank" class="lux-icon zalo" aria-label="Zalo">💬</a>
   </div>
 </div>
 
-<script src="main.js"></script>
+<script>
+// ==================== LANGUAGE TOGGLE ====================
+let currentLang = 'vi';
+const langToggle = document.getElementById('langToggle');
+
+if (langToggle) {
+  langToggle.addEventListener('click', () => {
+    currentLang = currentLang === 'vi' ? 'en' : 'vi';
+    langToggle.textContent = currentLang === 'vi' ? 'EN' : 'VI';
+    updateLanguage();
+  });
+}
+
+function updateLanguage() {
+  document.querySelectorAll('[data-vi][data-en]').forEach(el => {
+    const text = currentLang === 'vi' ? el.getAttribute('data-vi') : el.getAttribute('data-en');
+    if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+      el.value = text;
+    } else {
+      el.textContent = text;
+    }
+  });
+}
+
+// ==================== MOBILE MENU ====================
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('navMenu');
+
+if (hamburger && navMenu) {
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    hamburger.classList.toggle('active');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+      navMenu.classList.remove('active');
+      hamburger.classList.remove('active');
+    }
+  });
+
+  navMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('active');
+      hamburger.classList.remove('active');
+    });
+  });
+}
+
+// ==================== SMOOTH SCROLL ====================
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    const href = this.getAttribute('href');
+    if (href !== '#' && href.length > 1) {
+      e.preventDefault();
+      const target = document.querySelector(href);
+      if (target) {
+        const headerOffset = 100;
+        const elementPosition = target.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+      }
+    }
+  });
+});
+
+// ==================== VOUCHER CODE COPY ====================
+document.querySelectorAll('.voucher-code').forEach(codeElement => {
+  codeElement.style.cursor = 'pointer';
+  codeElement.title = 'Click để copy mã';
+  
+  codeElement.addEventListener('click', function() {
+    const code = this.getAttribute('data-code');
+    
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(code).then(() => {
+        showNotification('Đã copy mã: ' + code);
+      });
+    } else {
+      const textArea = document.createElement('textarea');
+      textArea.value = code;
+      textArea.style.position = 'fixed';
+      textArea.style.opacity = '0';
+      document.body.appendChild(textArea);
+      textArea.select();
+      try {
+        document.execCommand('copy');
+        showNotification('Đã copy mã: ' + code);
+      } catch (err) {
+        console.error('Failed to copy:', err);
+      }
+      document.body.removeChild(textArea);
+    }
+  });
+});
+
+function showNotification(message) {
+  const notification = document.createElement('div');
+  notification.textContent = message;
+  notification.style.cssText = `
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(135deg, #FFD700, #DAA520);
+    color: #8B0000;
+    padding: 20px 40px;
+    border-radius: 15px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    z-index: 10000;
+    animation: fadeInOut 2.5s ease;
+    box-shadow: 0 10px 40px rgba(255, 215, 0, 0.6);
+    border: 3px solid #FFF4CC;
+  `;
+  
+  document.body.appendChild(notification);
+  setTimeout(() => notification.remove(), 2500);
+}
+
+const style = document.createElement('style');
+style.textContent = `
+  @keyframes fadeInOut {
+    0%, 100% { opacity: 0; transform: translate(-50%, -50%) scale(0.8); }
+    10%, 90% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+  }
+`;
+document.head.appendChild(style);
+
+// ==================== VIDEO CAROUSEL ====================
+const carouselWrapper = document.getElementById('carouselWrapper');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+
+if (prevBtn && nextBtn && carouselWrapper) {
+  prevBtn.addEventListener('click', () => {
+    carouselWrapper.scrollBy({ left: -530, behavior: 'smooth' });
+  });
+
+  nextBtn.addEventListener('click', () => {
+    carouselWrapper.scrollBy({ left: 530, behavior: 'smooth' });
+  });
+}
+
+// ==================== VIDEO PLAYER WITH AUDIO ====================
+document.querySelectorAll('.video-item').forEach(item => {
+  const video = item.querySelector('video');
+  const playBtn = item.querySelector('.play-button');
+  const volumeBtn = item.querySelector('.volume-control');
+  const overlay = item.querySelector('.video-overlay');
+  
+  // Play/Pause on click
+  overlay.addEventListener('click', () => {
+    if (video.paused) {
+      // Pause all other videos
+      document.querySelectorAll('.video-item video').forEach(v => {
+        if (v !== video) {
+          v.pause();
+          v.parentElement.classList.remove('playing');
+        }
+      });
+      
+      video.play();
+      item.classList.add('playing');
+    } else {
+      video.pause();
+      item.classList.remove('playing');
+    }
+  });
+  
+  // Volume toggle
+  if (volumeBtn) {
+    volumeBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      video.muted = !video.muted;
+      volumeBtn.textContent = video.muted ? '🔇' : '🔊';
+    });
+  }
+  
+  // Reset on video end
+  video.addEventListener('ended', () => {
+    item.classList.remove('playing');
+  });
+});
+
+// ==================== SCROLL ANIMATIONS ====================
+const observerOptions = {
+  threshold: 0.15,
+  rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = '1';
+      entry.target.style.transform = 'translateY(0)';
+    }
+  });
+}, observerOptions);
+
+document.querySelectorAll('.voucher-card, .card, .img-box, .video-item').forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(40px)';
+  el.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+  observer.observe(el);
+});
+
+// ==================== HEADER SCROLL EFFECT ====================
+let lastScroll = 0;
+const header = document.querySelector('.header');
+
+window.addEventListener('scroll', () => {
+  const currentScroll = window.pageYOffset;
+  
+  if (currentScroll > 100) {
+    header.style.boxShadow = '0 6px 30px rgba(0, 0, 0, 0.7)';
+  } else {
+    header.style.boxShadow = '0 4px 30px rgba(0, 0, 0, 0.5)';
+  }
+  
+  lastScroll = currentScroll;
+});
+
+// ==================== CONSOLE BRANDING ====================
+console.log('%c🏰 EMPIRE CLUB', 'font-size: 28px; font-weight: bold; color: #FFD700; text-shadow: 0 0 10px rgba(255,215,0,0.8);');
+console.log('%cNơi đêm trở thành Đế Chế | Where Night Becomes Empire', 'font-size: 16px; color: #FFF4CC;');
+console.log('%c📞 Hotline: 0919 918 178', 'font-size: 14px; color: #FFD700;');
+console.log('%c🎊 Chúc Mừng Năm Mới Bính Ngọ 2026! 🐎', 'font-size: 14px; color: #FF8C00;');
+
+// ==================== INITIALIZATION ====================
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('Empire Club - Tết Edition loaded! 🎊🐎');
+  updateLanguage();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
+
 </body>
 </html>
